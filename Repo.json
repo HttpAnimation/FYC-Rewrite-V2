@@ -19,16 +19,13 @@
                 "StreamURL": "https://archive.org/download/JustTheTwoOfUs1970/JustTheTwoOfUs_512kb.mp4"
             }
         },
-    "Linux": {
-        "Name": {
-            "Name": "Linux Games CD",
+        "Linux" : {
+        "Name": "Linux Games CD", 
             ".Torrent": "https://archive.org/download/linux-games-cd/linux-games-cd_archive.torrent",
             "MagnetUrl": "magnet:?xt=urn:btih:4OAUTOGKJ6425HGP2X2BVRJEG3BHJ25P&dn=linux-games-cd&tr=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce",
             "Icon": "https://archive.org/download/linux-games-cd/Linux%20Games%20CD%20disk%20label_.jpg",
             "HasStreamURL": "false",
             "StreamURL": "YourStreamUrl"
         }
-        
-    }
     }
 ]
