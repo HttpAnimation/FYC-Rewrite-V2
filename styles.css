@@ -1,0 +1,67 @@
+body {
+    background-color: #121212; /* Dark background color */
+    color: #ffffff; /* Text color */
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+#sidebar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333333; /* Sidebar background color */
+    padding-top: 20px;
+}
+
+#content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+#darkModeIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.movie-button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #555555; /* Button background color */
+    color: #ffffff; /* Button text color */
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.error-message {
+    background-color: #ff6347; /* Tomato color for error messages */
+    color: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#content {
+    margin-left: 270px; /* Adjusted margin to push content away from the sidebar */
+    padding: 20px;
+}
+
+.movie-button {
+    display: block;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #555555; /* Button background color */
+    color: #ffffff; /* Button text color */
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
