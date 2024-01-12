@@ -61,19 +61,28 @@
             margin-left: 270px; /* Adjusted margin to push content away from the sidebar */
             padding: 20px;
         }
+
+        .movie-button {
+            display: block;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #555555; /* Button background color */
+            color: #ffffff; /* Button text color */
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <div id="sidebar">
         <a href="index.html" class="movie-button">Home</a>
-        <a id="torrentButton" class="movie-button">Download Torrent</a>
-        <a id="magnetButton" class="movie-button">Magnet Link</a>
-        <a id="streamButton" class="movie-button">Open Stream</a>
     </div>
 
     <div id="content">
-        <!--This is where the content gets loaded :)-->
+        <!-- Movie content will be dynamically loaded here by Movies.js -->
     </div>
-<script src="Movies.js"></script>    
+
+    <script src="Movies.js"></script>
 </body>
 </html>

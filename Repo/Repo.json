@@ -3,9 +3,9 @@
         "Repo-Name": "HttpAnimations Short-Flims repo",
         "Movies": {
             "Short-1": {
-                "Name": "Short 1",
-                ".Torrent": "https://exp.com",
-                "MagnetUrl": "https://exp.com",
+                "Name": "Steamboat Willie",
+                ".Torrent": "https://archive.org/download/steamboat-willie_1928/steamboat-willie_1928_archive.torrent",
+                "MagnetUrl": "magnet:?xt=urn:btih:OOXP5DDIM6HLSXQ6ZN7ZQXMT3BDGBDOF&dn=steamboat-willie_1928&tr=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce",
                 "Icon": "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/Testing/Repo/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg",
                 "HasStreamURL": "true",
                 "StreamURL": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"    

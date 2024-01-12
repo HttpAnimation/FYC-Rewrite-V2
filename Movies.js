@@ -32,18 +32,26 @@ fetch('Configs/Replers/Repo.json')
         fetch(repoURL)
             .then(response => response.json())
             .then(repoData => {
-                // Iterate over movies in the repo
-                Object.entries(repoData[0]['Movies']).forEach(([key, movie]) => {
-                    // Set movie details in the content section
-                    document.getElementById('content').innerHTML += `
-                        <div id="${key}">
-                            <h1>${movie['Name']}</h1>
-                            <img src="${movie['Icon']}" alt="Movie Icon">
-                            <a class="movie-button" href="${movie['.Torrent']}" target="_blank" onclick="handleButtonClick('Download Torrent', this.href)">Download Torrent</a>
-                            <a class="movie-button" href="${movie['MagnetUrl']}" onclick="handleButtonClick('Magnet Link', this.href)">Magnet Link</a>
-                            ${movie['HasStreamURL'] === 'true' ? `<a class="movie-button" href="${movie['StreamURL']}" onclick="handleButtonClick('Open Stream', this.href)">Open Stream</a>` : ''}
-                        </div>
+                // Display multiple movies in the main content area
+                const movies = repoData[0]['Movies'];
+                const contentElement = document.getElementById('content');
+                Object.keys(movies).forEach(key => {
+                    const movie = movies[key];
+                    const movieElement = document.createElement('div');
+                    movieElement.innerHTML = `
+                        <h1>${movie['Name']}</h1>
+                        <img src="${movie['Icon']}" alt="Movie Icon">
+                        <a href="${movie['.Torrent']}" target="_blank" class="movie-button">Download Torrent</a>
+                        <a href="${movie['MagnetUrl']}" class="movie-button">Magnet Link</a>
                     `;
+                    if (movie['HasStreamURL'] === 'true') {
+                        const streamButton = document.createElement('a');
+                        streamButton.href = movie['StreamURL'];
+                        streamButton.classList.add('movie-button');
+                        streamButton.textContent = 'Open Stream';
+                        movieElement.appendChild(streamButton);
+                    }
+                    contentElement.appendChild(movieElement);
                 });
             })
             .catch(error => {
@@ -52,6 +60,6 @@ fetch('Configs/Replers/Repo.json')
             });
     })
     .catch(error => {
-        console.error('Error fetching repo data:', error);
-        showError('Error fetching repo data. Please install the CORS Everywhere extension.');
+        console.error('Error fetching repo list:', error);
+        showError('Error fetching repo list. Please install the CORS Everywhere extension.');
     });
