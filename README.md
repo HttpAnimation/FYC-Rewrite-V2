@@ -1,2 +1,2 @@
-# FYC Rewrite V2
-blank branch for other thing
+# FYC-Rewrite V2
+This is the main/defualt repo.
