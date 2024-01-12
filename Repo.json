@@ -18,6 +18,14 @@
                 "HasStreamURL": true,
                 "StreamURL": "https://archive.org/download/JustTheTwoOfUs1970/JustTheTwoOfUs_512kb.mp4"
             }
+        },
+        "Linux": {
+            "Name": "Linux Format CD- 19",
+            ".Torrent": "https://archive.org/download/Linux_Format_CD-19/Linux_Format_CD-19_archive.torrent",
+            "MagnetUrl": "magnet:?xt=urn:btih:OOMQVHIFK36BIR75EMVW3YPGVPQCFRWK&dn=Linux_Format_CD-19&tr=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce",
+            "Icon": "https://archive.org/download/Linux_Format_CD-19/Linux_Format_CD-19.png",
+            "HasStreamURL": "false",
+            "StreamURL": "https://github.com/HttpAnimation"
         }
     }
 ]
