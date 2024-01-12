@@ -1,2 +1,2 @@
 # FYC Rewrite
-This repo is mainly for testing random stuff.
+This branch is mainly for testing random stuff.
