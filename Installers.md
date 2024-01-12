@@ -7,10 +7,10 @@ To install a version open a terminal and run the following command.
 ### Version one
 
 ```bash
-mkdir V1 && cd V1 && git clone -b Version-1 https://github.com/HttpAnimation/FYC-Rewrite-V2.git && cd ../
+mkdir V1 && cd V1 && git clone -b Version-1 https://github.com/HttpAnimation/FYC-Rewrite-V2.git && cd ../ && echo 'Version one has been install'
 ```
 
-### Version two
+### Version two (dev)
 ```bash
-mkdir V2 && cd V2 && git clone -b V2 https://github.com/HttpAnimation/FYC-Rewrite-V2.git && cd ../
+mkdir V2 && cd V2 && git clone -b V2 https://github.com/HttpAnimation/FYC-Rewrite-V2.git && cd ../ && echo 'Version two has been install'
 ```

@@ -2,7 +2,11 @@
 FYC is a way for loading json data for torrent's FYC is not made for piracy so just don't use it for that UwU.
 
 ## Installing
-If you would like to install a version go over this [file](Installers.md) and that will have all the commands for installing.
+If you would like to install a version go over this [file](Installers.md) and that will have all the commands for installing all versions if you would like the newest stable tho heres the install command just a open a terminal and run the command.
+
+```bash
+mkdir V1 && cd V1 && git clone -b Version-1 https://github.com/HttpAnimation/FYC-Rewrite-V2.git && cd ../ && echo 'Version one has been install'
+```
 
 ## Repos
 Repos are the way of getting data into FYC as of writing this I have not made the documantion for making a repo but it will soon be in place if you would like to make a repo already you can look at this [branch](https://github.com/HttpAnimation/FYC-Rewrite-V2) for doing so. There is already a defualt Repo in FYC witch is where all verifed repos are in.
