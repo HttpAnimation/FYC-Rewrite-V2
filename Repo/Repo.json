@@ -3,7 +3,15 @@
         "Repo-Name": "HttpAnimations Short-Flims repo",
         "Movies": {
             "Short-1": {
-                "Name": "Short name",
+                "Name": "Short 1",
+                ".Torrent": "https://exp.com",
+                "MagnetUrl": "https://exp.com",
+                "Icon": "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/Testing/Repo/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg",
+                "HasStreamURL": "true",
+                "StreamURL": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"    
+            },
+            "Short-2": {
+                "Name": "Short 2",
                 ".Torrent": "https://exp.com",
                 "MagnetUrl": "https://exp.com",
                 "Icon": "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/Testing/Repo/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg",
