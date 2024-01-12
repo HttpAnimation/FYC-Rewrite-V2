@@ -26,38 +26,35 @@ function handleButtonClick(buttonName, link) {
 fetch('../Configs/Replers/Repo.json')
     .then(response => response.json())
     .then(data => {
-        const repoURL = data[0]['Repo-1'];
-        fetch(repoURL)
-            .then(response => response.json())
-            .then(repoData => {
-                // Display multiple movies in the main content area
-                const movies = repoData[0]['Movies'];
-                const contentElement = document.getElementById('content');
-                Object.keys(movies).forEach(key => {
-                    const movie = movies[key];
-                    const movieElement = document.createElement('div');
-                    movieElement.innerHTML = `
-                        <h1>${movie['Name']}</h1>
-                        <img src="${movie['Icon']}" alt="Movie Icon">
-                        <a href="${movie['.Torrent']}" target="_blank" class="movie-button">Download Torrent</a>
-                        <a href="${movie['MagnetUrl']}" class="movie-button">Magnet Link</a>
-                    `;
-                    if (movie['HasStreamURL'] === 'true') {
-                        const streamButton = document.createElement('a');
-                        streamButton.href = movie['StreamURL'];
-                        streamButton.classList.add('movie-button');
-                        streamButton.textContent = 'Open Stream';
-                        movieElement.appendChild(streamButton);
-                    }
-                    contentElement.appendChild(movieElement);
-                });
-            })
-            .catch(error => {
-                console.error('Error fetching repo data:', error);
-                showError('Error fetching repo data. Please install the CORS Everywhere extension.');
+        const repo = data[0];
+
+        // Display multiple items in the main content area
+        const contentElement = document.getElementById('content');
+
+        // Display Linux items
+        const linuxItems = repo['Linux'];
+        if (linuxItems) {
+            Object.keys(linuxItems).forEach(key => {
+                const linuxItem = linuxItems[key];
+                const linuxElement = document.createElement('div');
+                linuxElement.innerHTML = `
+                    <h1>${linuxItem['Name']}</h1>
+                    <img src="${linuxItem['Icon']}" alt="Linux Icon">
+                    <a href="${linuxItem['.Torrent']}" target="_blank" class="linux-button">Download Torrent</a>
+                    <a href="${linuxItem['MagnetUrl']}" class="linux-button">Magnet Link</a>
+                `;
+                if (linuxItem['HasStreamURL'] === 'true') {
+                    const streamButton = document.createElement('a');
+                    streamButton.href = linuxItem['StreamURL'];
+                    streamButton.classList.add('linux-button');
+                    streamButton.textContent = 'Open Stream';
+                    linuxElement.appendChild(streamButton);
+                }
+                contentElement.appendChild(linuxElement);
             });
+        }
     })
     .catch(error => {
-        console.error('Error fetching repo list:', error);
-        showError('Error fetching repo list. Please install the CORS Everywhere extension.');
+        console.error('Error fetching data:', error);
+        showError('Error fetching data. Please install the CORS Everywhere extension.');
     });
