@@ -7,7 +7,7 @@
                 ".Torrent": "https://archive.org/download/steamboat-willie_1928/steamboat-willie_1928_archive.torrent",
                 "MagnetUrl": "magnet:?xt=urn:btih:OOXP5DDIM6HLSXQ6ZN7ZQXMT3BDGBDOF&dn=steamboat-willie_1928&tr=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce",
                 "Icon": "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/Testing/Repo/MV5BMzQxYzIxOTYtMGQzYi00ZjUxLThhMGEtZDZlOTg1OGE2ODc1XkEyXkFqcGdeQXVyNjc5NjEzNA@@._V1_FMjpg_UX1000_.jpg",
-                "HasStreamURL": "true",
+                "HasStreamURL": true,
                 "StreamURL": "https://archive.org/download/steamboat-willie_1928/steamboat-willie_1928.ia.mp4"
             },
             "Just The Two Of Us [1970]": {
@@ -15,7 +15,7 @@
                 ".Torrent": "https://archive.org/download/JustTheTwoOfUs1970/JustTheTwoOfUs1970_archive.torrent",
                 "MagnetUrl": "magnet:?xt=urn:btih:FDS3SV74ZRBPTA63KMKDEBJDKUIJ45AV&dn=JustTheTwoOfUs1970&tr=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce",
                 "Icon": "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/Testing/Repo/MV5BMTQ5NDM3NjIwMV5BMl5BanBnXkFtZTcwODYzNjA1MQ@@._V1_.jpg",
-                "HasStreamURL": "true",
+                "HasStreamURL": true,
                 "StreamURL": "https://archive.org/download/JustTheTwoOfUs1970/JustTheTwoOfUs_512kb.mp4"
             }
         }
