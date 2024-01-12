@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <style>
+        body {
+            background-color: #121212; /* Dark background color */
+            color: #ffffff; /* Text color */
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        #sidebar {
+            width: 250px;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #333333; /* Sidebar background color */
+            padding-top: 20px;
+        }
+
+        #content {
+            margin-left: 250px;
+            padding: 20px;
+        }
+
+        #darkModeIcon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .movie-button {
+            display: block;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #555555; /* Button background color */
+            color: #ffffff; /* Button text color */
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="sidebar">
+        <a href="index.html" class="movie-button">Home</a>
+        <a id="torrentButton" class="movie-button">Download Torrent</a>
+        <a id="magnetButton" class="movie-button">Magnet Link</a>
+        <a id="streamButton" class="movie-button">Open Stream</a>
+    </div>
+
+    <div id="content">
+        <!-- Movie content will be loaded here -->
+    </div>
+
+    <script>
+        // Function to toggle dark mode
+        function toggleDarkMode() {
+            const body = document.body;
+            body.classList.toggle("dark-mode");
+        }
+
+        // Fetch and process JSON data
+        fetch('Configs/Replers/Repo.json')
+            .then(response => response.json())
+            .then(data => {
+                const repoURL = data[0]['Repo-1'];
+                fetch(repoURL)
+                    .then(response => response.json())
+                    .then(movieData => {
+                        const movie = movieData[0]['Movies']['Short-1'];
+
+                        // Set movie details in the content section
+                        document.getElementById('content').innerHTML = `
+                            <h1>${movie['Name']}</h1>
+                            <img src="${movie['Icon']}" alt="Movie Icon">
+                        `;
+
+                        // Set buttons with appropriate links
+                        document.getElementById('torrentButton').href = movie['.Torrent'];
+                        document.getElementById('magnetButton').href = movie['MagnetUrl'];
+
+                        // Show/hide stream button based on HasStreamURL value
+                        if (movie['HasStreamURL'] === 'true') {
+                            const streamButton = document.getElementById('streamButton');
+                            streamButton.style.display = 'block';
+                            streamButton.href = movie['StreamURL'];
+                        }
+                    })
+                    .catch(error => console.error('Error fetching movie data:', error));
+            })
+            .catch(error => console.error('Error fetching repo data:', error));
+    </script>
+</body>
+</html>
