@@ -19,6 +19,8 @@ Here is a list of known issues am working on.
 
 1) The stream button does not show up even when the string is true.
 
+2) All other repos but Movies don't work.
+
 ## Streaming
 If you would like to stream you're FYC page you can do on of the following.
 
