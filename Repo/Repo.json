@@ -8,12 +8,12 @@
                 "MagnetUrl": "magnet:?xt=urn:btih:OOXP5DDIM6HLSXQ6ZN7ZQXMT3BDGBDOF&dn=steamboat-willie_1928&tr=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce",
                 "Icon": "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/Testing/Repo/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg",
                 "HasStreamURL": "true",
-                "StreamURL": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"    
+                "StreamURL": "https://archive.org/download/steamboat-willie_1928/steamboat-willie_1928.ia.mp4"    
             },
             "Short-2": {
-                "Name": "Short 2",
-                ".Torrent": "https://exp.com",
-                "MagnetUrl": "https://exp.com",
+                "Name": "Just The Two Of Us [1970]",
+                ".Torrent": "https://archive.org/download/JustTheTwoOfUs1970/JustTheTwoOfUs1970_archive.torrent",
+                "MagnetUrl": "magnet:?xt=urn:btih:FDS3SV74ZRBPTA63KMKDEBJDKUIJ45AV&dn=JustTheTwoOfUs1970&tr=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce",
                 "Icon": "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/Testing/Repo/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg",
                 "HasStreamURL": "true",
                 "StreamURL": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"    
