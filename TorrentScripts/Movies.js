@@ -3,6 +3,7 @@ function toggleDarkMode() {
     const body = document.body;
     body.classList.toggle("dark-mode");
     console.log('Dark mode toggled');
+    console.log('There should be no change on the site if there is then pls reload the page');
 }
 
 // Function to show an error message
@@ -23,7 +24,7 @@ function handleButtonClick(buttonName, link) {
 }
 
 // Fetch and process JSON data
-fetch('../Configs/Replers/Repo.json')
+fetch('../Configs/Replers/Movie-Repo.json')
     .then(response => response.json())
     .then(data => {
         const repoURL = data[0]['Repo-1'];
