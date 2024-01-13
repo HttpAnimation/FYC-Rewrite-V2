@@ -45,8 +45,16 @@ cd FYC-Rewrite\ V2
 ```
 3) Download a new file to replace a old one
 ```
-rm README.md && wget 
+rm README.md && wget https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/main/Git-Hold/README.md
 ```
+4) Now go to the [Github make repo](https://github.com/new) site. once there you can do what ever with the name and leave everything else blank.
+
+5) Make a new branch called gh-pages a guide for that can be found [here](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository).
+
+6) upload the files to that branch by clicking Add file -> Upload files.
+
+8) Go to the Deployments
+![sc]()
 ## Streaming/Hosting - running
 This guide will follow the steps of running a live site using you're local hardware. You can either use your main pc or not but it must be running some sort of unix either macOS or Linux and [Python3](https://www.python.org/) must be installed this script will not work with out it
 
