@@ -36,10 +36,17 @@ Forking the repo is useful when you either have a pc you can't use for running a
 This is the best way of having an FYC but it has a few downers so first of all no one can see you're site if they are not on your network so don't just send your mate a URL on [Discord](https://discord.com) with you're ip and port on it because it's not gonna work for that you will need a fork or to port forward witch I have no idea how to do. You will also need a pc running Linux now I would recommend [Ubuntu server](https://ubuntu.com/download/server) or [Debian 12](https://www.debian.org/News/2023/20230610) also [macOS](apple.com) can be used but I have not tested it out so some stuff might not work right  but **[Windows](microsoft.com) OR [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) CAN NOT AND WILL NOT WORK** but besides these decides this is gonna be the best way of having a site.
 
 ## Streaming/Forking - running
-This guide will follow the steps of running a live fork of FYC using Github
+This guide will follow the steps of running a live fork of FYC using Github you will need to use a pc just for a little bit to get the needed files.
 
-**This is not done yet**
-
+1) Install FYC this command can be found above
+2) cd into that dir
+```
+cd FYC-Rewrite\ V2
+```
+3) Download a new file to replace a old one
+```
+rm README.md && wget 
+```
 ## Streaming/Hosting - running
 This guide will follow the steps of running a live site using you're local hardware. You can either use your main pc or not but it must be running some sort of unix either macOS or Linux and [Python3](https://www.python.org/) must be installed this script will not work with out it
 
