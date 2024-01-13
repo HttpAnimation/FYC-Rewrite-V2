@@ -1,11 +1,3 @@
-// Function to toggle dark mode
-function toggleDarkMode() {
-    const body = document.body;
-    body.classList.toggle("dark-mode");
-    console.log('Dark mode toggled');
-    console.log('There should be no change on the site if there is then pls reload the page');
-}
-
 // Function to show an error message
 function showError(message) {
     const errorMessage = document.createElement('div');
@@ -55,10 +47,8 @@ fetch('../Configs/Replers/Movie-Repo.json')
             })
             .catch(error => {
                 console.error('Error fetching repo data:', error);
-                showError('Error fetching repo data. Please install the CORS Everywhere extension.');
             });
     })
     .catch(error => {
         console.error('Error fetching repo list:', error);
-        showError('Error fetching repo list. Please install the CORS Everywhere extension.');
     });
