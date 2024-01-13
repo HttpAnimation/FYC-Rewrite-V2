@@ -1,11 +1,3 @@
-// Function to toggle dark mode
-function toggleDarkMode() {
-    const body = document.body;
-    body.classList.toggle("dark-mode");
-    console.log('Dark mode toggled');
-    console.log('There should be no change on the site if there is then pls reload the page');
-}
-
 // Function to show an error message
 function showError(message) {
     const errorMessage = document.createElement('div');
