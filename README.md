@@ -9,7 +9,7 @@ mkdir FYC-Rewrite\ V2 && cd FYC-Rewrite\ && git clone -b Stable https://github.c
 ```
 
 ## Repos
-Repos are the way of getting data into FYC you can find the docs [here](https://github.com/HttpAnimation/FYC-Rewrite-V2/Repo-docs/README.md)
+Repos are the way of getting data into FYC you can find the docs [here](https://github.com/HttpAnimation/FYC-Rewrite-V2/tree/Repo-docs)
 
 ## Report issues
 If you would like to report an issue head over to the issue page which can be found [here](https://github.com/HttpAnimation/FYC-Rewrite-V2/issues).
