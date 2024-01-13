@@ -52,3 +52,4 @@ fetch('../Configs/Replers/TV-Repo.json')
     .catch(error => {
         console.error('Error fetching repo list:', error);
     });
+    console.log('TV.js | Loaded') 

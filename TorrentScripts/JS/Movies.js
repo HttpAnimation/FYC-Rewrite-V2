@@ -52,3 +52,4 @@ fetch('../Configs/Replers/Movie-Repo.json')
     .catch(error => {
         console.error('Error fetching repo list:', error);
     });
+    console.log('Movies.js | Loaded') 

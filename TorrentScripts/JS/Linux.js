@@ -52,3 +52,4 @@ fetch('../Configs/Replers/Linux-Repo.json')
     .catch(error => {
         console.error('Error fetching repo list:', error);
     });
+    console.log('Linux.js | Loaded') 

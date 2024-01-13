@@ -52,3 +52,4 @@ fetch('../Configs/Replers/Windows-Apps-Repo.json')
     .catch(error => {
         console.error('Error fetching repo list:', error);
     });
+    console.log('Windows-Apps.js | Loaded') 

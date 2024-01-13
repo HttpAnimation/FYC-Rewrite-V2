@@ -52,3 +52,4 @@ fetch('../Configs/Replers/macOS-Repo.json')
     .catch(error => {
         console.error('Error fetching repo list:', error);
     });
+    console.log('macOS.js | Loaded') 
