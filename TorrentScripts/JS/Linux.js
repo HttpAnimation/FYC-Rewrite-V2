@@ -16,7 +16,7 @@ function handleButtonClick(buttonName, link) {
 }
 
 // Fetch and process JSON data
-fetch('../../Configs/Replers/Linux-Repo.json')
+fetch('../Configs/Replers/Linux-Repo.json')
     .then(response => response.json())
     .then(data => {
         const repoURL = data[0]['Repo-1'];
