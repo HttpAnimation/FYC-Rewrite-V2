@@ -4,6 +4,15 @@ This file is for installing versions of FYC if you would like to install on a br
 
 To install a version open a terminal and run the following command.
 
+## Stable
+This is always gonna to be the newest version.
+
+```bash
+mkdir FYC-Rewrite\ V2 && cd FYC-Rewrite\ && git clone -b Stable https://github.com/HttpAnimation/FYC-Rewrite-V2.git && cd ../ && echo 'FYC has been installed'
+```
+
+# Old
+
 ### Version one
 
 ```bash
