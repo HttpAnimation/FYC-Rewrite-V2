@@ -8,7 +8,7 @@ To install a version open a terminal and run the following command.
 This is always gonna to be the newest version.
 
 ```bash
-mkdir FYC-Rewrite\ V2 && cd FYC-Rewrite\ && git clone -b Stable https://github.com/HttpAnimation/FYC-Rewrite-V2.git && cd ../ && echo 'FYC has been installed'
+mkdir FYC-Rewrite\ V2 && cd FYC-Rewrite\ V2 && git clone -b Stable https://github.com/HttpAnimation/FYC-Rewrite-V2.git && echo 'FYC has been installed'
 ```
 
 # Old
