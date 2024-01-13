@@ -43,7 +43,7 @@ Once you have you're file made copy this template that is also listed below.
 ```
 Make sure not to replace the JSON code below with something else as it will break your repo.
 ```json
-        "Movies": {
+"Movies": {
 ```
 ## Adding a torrent
 This part will go over making a torrent for your repo.
