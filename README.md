@@ -7,7 +7,7 @@ FYC (Fetch Your Content) provides a convenient way to load JSON data for torrent
 To install FYC-Rewrite V2, follow the instructions in the [Installers.md](Installers.md) file. For the latest stable version, use the following terminal command:
 
 ```bash
-mkdir FYC-Rewrite\ V2 && cd FYC-Rewrite\ V2 && git clone -b Stable https://github.com/HttpAnimation/FYC-Rewrite-V2.git && echo 'FYC has been installed'
+git clone -b Stable https://github.com/HttpAnimation/FYC-Rewrite-V2.git && echo 'FYC has been installed' && cd FYC-Rewrite-V2
 ```
 
 ## Repositories
