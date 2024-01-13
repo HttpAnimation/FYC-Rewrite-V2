@@ -41,6 +41,25 @@ This guide will follow the steps of running a live fork of FYC using Github
 **This is not done yet**
 
 ## Streaming/Hosting - running
-This guide will follow the steps of running a live site using you're local hardware.
+This guide will follow the steps of running a live site using you're local hardware. You can either use your main pc or not but it must be running some sort of unix either macOS or Linux and [Python3](https://www.python.org/) must be installed this script will not work with out it
 
-**This is not done yet**
+1) cd into the dir where the fyc files are at you should see something like this when you ls the dir.
+    ```bash
+    httpanimations@Https-iMac Stable % ls
+    Configs                 LICENSE                 Templates               index.html
+    Credits.html            Q&A.html                TorrentScripts          styles.css
+    Dev-Classes.html        README.md               V1-Devs.html
+    httpanimations@Https-iMac Stable % 
+    ```
+2) Once you are in then download the server with the following command listed below
+    ```bash
+    wget https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/main/Server.sh
+    ```
+3) Now allow the script to run.
+    ```bash
+    chmod +x Server.sh
+    ```
+4) Now run the website the ip address and port will show up don't worry they are just public ip's.
+    ```bash
+    ./Server.sh
+    ```
