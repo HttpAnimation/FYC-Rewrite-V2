@@ -55,10 +55,8 @@ fetch('../Configs/Replers/Repo.json')
             })
             .catch(error => {
                 console.error('Error fetching repo data:', error);
-                showError('Error fetching repo data. Please install the CORS Everywhere extension.');
             });
     })
     .catch(error => {
         console.error('Error fetching repo list:', error);
-        showError('Error fetching repo list. Please install the CORS Everywhere extension.');
     });
