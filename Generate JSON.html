@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML to JSON Converter</title>
+</head>
+<body>
+    <div id="drop-area" style="border: 2px dashed #ccc; padding: 20px; text-align: center; margin: 50px;">
+        <p>Drag and drop your HTML file here</p>
+        <input type="file" id="file-input" style="display: none;" accept=".html">
+    </div>
+
+    <script>
+        const dropArea = document.getElementById('drop-area');
+        const fileInput = document.getElementById('file-input');
+
+        // Prevent default behaviors
+        ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+            dropArea.addEventListener(eventName, preventDefaults, false);
+            document.body.addEventListener(eventName, preventDefaults, false);
+        });
+
+        // Highlight drop area when dragging over
+        ['dragenter', 'dragover'].forEach(eventName => {
+            dropArea.addEventListener(eventName, highlight, false);
+        });
+
+        // Unhighlight drop area when dragging leaves
+        ['dragleave', 'drop'].forEach(eventName => {
+            dropArea.addEventListener(eventName, unhighlight, false);
+        });
+
+        // Handle dropped files
+        dropArea.addEventListener('drop', handleDrop, false);
+
+        function preventDefaults(e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+
+        function highlight() {
+            dropArea.style.background = '#e1e7f0';
+        }
+
+        function unhighlight() {
+            dropArea.style.background = '#ffffff';
+        }
+
+        function handleDrop(e) {
+            const dt = e.dataTransfer;
+            const files = dt.files;
+
+            handleFiles(files);
+        }
+
+        function handleFiles(files) {
+            for (const file of files) {
+                if (file.type === 'text/html') {
+                    readFile(file);
+                } else {
+                    alert('Please drop a valid HTML file.');
+                }
+            }
+        }
+
+        function readFile(file) {
+            const reader = new FileReader();
+
+            reader.onload = function (e) {
+                const htmlContent = e.target.result;
+                convertToJSON(htmlContent);
+            };
+
+            reader.readAsText(file);
+        }
+
+        function convertToJSON(htmlContent) {
+            // Process the HTML content and generate JSON
+            // You can use the previous example's logic here
+
+            // For demonstration, let's log the HTML content to console
+            console.log(htmlContent);
+        }
+
+        // Open file input when the drop area is clicked
+        dropArea.addEventListener('click', () => fileInput.click());
+
+        // Handle selected file when input changes
+        fileInput.addEventListener('change', function () {
+            const files = this.files;
+            handleFiles(files);
+        });
+    </script>
+</body>
+</html>
