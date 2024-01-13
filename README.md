@@ -9,7 +9,7 @@ mkdir FYC-Rewrite\ V2 && cd FYC-Rewrite\ && git clone -b Stable https://github.c
 ```
 
 ## Repos
-Repos are the way of getting data into FYC as of writing this I have not made the documentation for making a repo but it will soon be in place if you would like to make a repo already you can look at this [branch](https://github.com/HttpAnimation/FYC-Rewrite-V2) for doing so. There is already a default Repo in FYC which is where all verified repos are in.
+Repos are the way of getting data into FYC you can find the docs [here](https://github.com/HttpAnimation/FYC-Rewrite-V2/Repo-docs/README.md)
 
 ## Report issues
 If you would like to report an issue head over to the issue page which can be found [here](https://github.com/HttpAnimation/FYC-Rewrite-V2/issues).
