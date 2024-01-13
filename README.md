@@ -54,7 +54,10 @@ rm README.md && wget https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite
 6) upload the files to that branch by clicking Add file -> Upload files.
 
 8) Go to the Deployments
-![sc]()
+![photo](https://github.com/HttpAnimation/FYC-Rewrite-V2/blob/main/Screenshot%202024-01-13%20at%2002-40-13%20HttpAnimation_awdawdawd%20at%20gh-pages.png?raw=true)
+
+9) Go to the webiste using the provided url you get.
+![photo](https://github.com/HttpAnimation/FYC-Rewrite-V2/blob/main/Screenshot%202024-01-13%20at%2002-42-15%20Deployments%20%C2%B7%20HttpAnimation_awdawdawd.png?raw=true)
 ## Streaming/Hosting - running
 This guide will follow the steps of running a live site using you're local hardware. You can either use your main pc or not but it must be running some sort of unix either macOS or Linux and [Python3](https://www.python.org/) must be installed this script will not work with out it
 
