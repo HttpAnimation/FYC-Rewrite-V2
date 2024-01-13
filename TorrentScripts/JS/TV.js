@@ -15,41 +15,57 @@ function handleButtonClick(buttonName, link) {
     }
 }
 
-// Fetch and process JSON data
+// Fetch and process JSON data from multiple repositories
 fetch('../Configs/Replers/TV-Repo.json')
     .then(response => response.json())
     .then(data => {
-        const repoURL = data[0]['Repo-1'];
-        fetch(repoURL)
-            .then(response => response.json())
-            .then(repoData => {
-                // Display multiple movies in the main content area
-                const movies = repoData[0]['Movies'];
-                const contentElement = document.getElementById('content');
-                Object.keys(movies).forEach(key => {
-                    const movie = movies[key];
-                    const movieElement = document.createElement('div');
-                    movieElement.innerHTML = `
-                        <h1>${movie['Name']}</h1>
-                        <img src="${movie['Icon']}" alt="Movie Icon">
-                        <a href="${movie['.Torrent']}" target="_blank" class="movie-button">Download Torrent</a>
-                        <a href="${movie['MagnetUrl']}" class="movie-button">Magnet Link</a>
-                    `;
-                    if (movie['HasStreamURL'] === 'true') {
-                        const streamButton = document.createElement('a');
-                        streamButton.href = movie['StreamURL'];
-                        streamButton.classList.add('movie-button');
-                        streamButton.textContent = 'Open Stream';
-                        movieElement.appendChild(streamButton);
-                    }
-                    contentElement.appendChild(movieElement);
-                });
-            })
-            .catch(error => {
-                console.error('Error fetching repo data:', error);
-            });
+        const repositories = data[0]['Repositories'];
+        const contentElement = document.getElementById('content');
+
+        const fetchRepoData = async (repoURL) => {
+            try {
+                const response = await fetch(repoURL);
+                const repoData = await response.json();
+        
+                const movies = repoData['Movies'] || repoData[0]['Movies'];
+        
+                if (movies) {
+                    Object.keys(movies).forEach(key => {
+                        const movie = movies[key];
+                        const movieElement = document.createElement('div');
+                        movieElement.innerHTML = `
+                            <h1>${movie['Name']}</h1>
+                            <img src="${movie['Icon']}" alt="Movie Icon">
+                            <a href="${movie['.Torrent']}" target="_blank" class="movie-button">Download Torrent</a>
+                            <a href="${movie['MagnetUrl']}" class="movie-button">Magnet Link</a>
+                        `;
+                        if (movie['HasStreamURL'] === true) {
+                            const streamButton = document.createElement('a');
+                            streamButton.href = movie['StreamURL'];
+                            streamButton.classList.add('movie-button');
+                            streamButton.textContent = 'Open Stream';
+                            movieElement.appendChild(streamButton);
+                        }
+                        contentElement.appendChild(movieElement);
+                    });
+                } else {
+                    console.error(`Error fetching repo data from ${repoURL}: Invalid data format.`);
+                    showError(`Error fetching repo data from ${repoURL}.`);
+                }
+            } catch (error) {
+                console.error(`Error fetching repo data from ${repoURL}:`, error);
+                showError(`Error fetching repo data from ${repoURL}.`);
+            }
+        };
+
+        repositories.forEach(repoURL => {
+            // Ensure proper handling of URLs
+            const correctedRepoURL = repoURL.trim();
+            fetchRepoData(correctedRepoURL);
+        });
     })
     .catch(error => {
         console.error('Error fetching repo list:', error);
     });
-    console.log('TV.js | Loaded') 
+
+console.log('TV.js | Loaded');

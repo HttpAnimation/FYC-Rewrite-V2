@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FYC-Rewrite V2</title>
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -17,5 +18,15 @@
     </div>
 
     <script src="JS/macOS.js"></script>
+    <script>
+        document.addEventListener('keydown', (event) => {
+            // Check if the pressed key is 'F'
+            if (event.key === 'F' || event.key === 'f') {
+                const sidebar = document.getElementById('sidebar');
+                // Toggle the visibility of the sidebar
+                sidebar.style.display = (sidebar.style.display === 'none' || sidebar.style.display === '') ? 'block' : 'none';
+            }
+        });
+    </script>
 </body>
 </html>

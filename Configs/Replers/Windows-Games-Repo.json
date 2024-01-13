@@ -1,5 +1,7 @@
 [
     {
-        "Repo-1": "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/Repo/Windows-Games-Repo.json"
+        "Repositories": [
+            "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/Repo/Windows-Games-Repo.json"
+        ]
     }
 ]
