@@ -5,7 +5,7 @@ FYC is a way for loading JSON data for torrent FYC is not made for piracy so jus
 If you would like to install a version go over this [file](Installers.md) and that will have all the commands for installing all versions if you would like the newest stable tho heres the install command just open a terminal and run the command.
 
 ```bash
-mkdir V1 && cd V1 && git clone -b Version-1 https://github.com/HttpAnimation/FYC-Rewrite-V2.git && cd ../ && echo 'Version one has been install'
+mkdir FYC-Rewrite\ V2 && cd FYC-Rewrite\ && git clone -b Stable https://github.com/HttpAnimation/FYC-Rewrite-V2.git && cd ../ && echo 'FYC has been installed'
 ```
 
 ## Repos
