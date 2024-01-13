@@ -24,6 +24,29 @@ Here is a list of known issues that are currently being addressed:
 
 1) The stream button does not appear even when the string is true.
 
+## Adding a repo
+This guide will go over adding a repo to FYC
+
+1) Open you're FYC folder and head over to Configs/Replers if you run ls it should look something like this
+    ```bash
+    httpanimations@Https-iMac Replers % ls
+    Andriod-Repo.json  Linux-Repo.json   Movie-Repo.json   TV-Repo.json   Windows-Apps-Repo.json  Windows-Games-Repo.json macOS-Repo.json
+    httpanimations@Https-iMac Replers % 
+    ```
+2) Open the repo file you want to add a repo to for exp let's use TV-Repo.json
+
+3) add a , at the end of your first repo then add "URL" on a new line
+    ```json
+    [
+        {
+            "Repositories": [
+                "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/Repo/TV-Repo.json",
+                "http://localhost:8009/TV-Repo.json"
+            ]
+        }
+    ]
+    ```
+
 ## Streaming
 
 If you wish to stream your FYC page, you can choose one of the following methods:
