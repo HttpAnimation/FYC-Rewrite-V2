@@ -1,0 +1,15 @@
+[
+    {
+        "Repo-Name": "HttpAnimations Windows Games repo",
+        "Movies": {
+            "Glider 4.0 for Windows": {
+                "Name": "Glider 4.0 for Windows",
+                ".Torrent": "https://archive.org/download/win3_Glider40/win3_Glider40_archive.torrent",
+                "MagnetUrl": "magnet:?xt=urn:btih:DDTVI7QXAHEJCSPXCAWHDZLBYPHCF2EO&dn=win3_Glider40&tr=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce",
+                "Icon": "https://archive.org/services/img/win3_Glider40",
+                "HasStreamURL": false,
+                "StreamURL": "stream.mp4"
+            }
+        }
+    }
+]

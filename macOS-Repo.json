@@ -1,0 +1,15 @@
+[
+    {
+        "Repo-Name": "HttpAnimations macOS repo",
+        "Movies": {
+            "MacOS Items Manager": {
+                "Name": "MacOS Items Manager",
+                ".Torrent": "https://ia800202.us.archive.org/25/items/tucows_206909_MacOS_Items_Manager/tucows_206909_MacOS_Items_Manager_archive.torrent",
+                "MagnetUrl": "magnet:?xt=urn:btih:BBBJYLO6I6TP4G34BCNJJCUWHZ26W4UH&dn=tucows_206909_MacOS_Items_Manager&tr=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce",
+                "Icon": "https://archive.org/download/tucows_206909_MacOS_Items_Manager/macositemsmgr.gif",
+                "HasStreamURL": false,
+                "StreamURL": "stream.mp4"
+            }
+        }
+    }
+]

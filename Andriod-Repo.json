@@ -1,0 +1,15 @@
+[
+    {
+        "Repo-Name": "HttpAnimations Andriod repo",
+        "Movies": {
+            "SD Maid System Cleaning Tool V 5.0.3 Pro": {
+                "Name": "SD Maid System Cleaning Tool V 5.0.3 Pro",
+                ".Torrent": "https://archive.org/download/sd-maid-system-cleaning-tool-v-5.0.3-pro/sd-maid-system-cleaning-tool-v-5.0.3-pro_archive.torrent",
+                "MagnetUrl": "magnet:?xt=urn:btih:UNX3B44I5BILL65J4HUZ22FMYYZ7QL5I&dn=sd-maid-system-cleaning-tool-v-5.0.3-pro&tr=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce",
+                "Icon": "https://archive.org/services/img/sd-maid-system-cleaning-tool-v-5.0.3-pro",
+                "HasStreamURL": false,
+                "StreamURL": "stream.mp4"
+            }
+        }
+    }
+]

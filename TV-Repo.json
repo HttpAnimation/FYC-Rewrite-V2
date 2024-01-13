@@ -1,0 +1,15 @@
+[
+    {
+        "Repo-Name": "HttpAnimations TV repo",
+        "Movies": {
+            "Many Happy Returns (aka: Invaders at Ground Zero)": {
+                "Name": "Many Happy Returns (aka: Invaders at Ground Zero)",
+                ".Torrent": "https://archive.org/download/TOT_Many_Happy_Returns/TOT_Many_Happy_Returns_archive.torrent",
+                "MagnetUrl": "magnet:?xt=urn:btih:BBBJYLO6I6TP4G34BCNJJCUWHZ26W4UH&dn=tucows_206909_MacOS_Items_Manager&tr=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce",
+                "Icon": "https://archive.org/services/img/TOT_Many_Happy_Returns",
+                "HasStreamURL": true,
+                "StreamURL": "https://archive.org/download/TOT_Many_Happy_Returns/TOT_Many_Happy_Returns_512kb.mp4"
+            }
+        }
+    }
+]

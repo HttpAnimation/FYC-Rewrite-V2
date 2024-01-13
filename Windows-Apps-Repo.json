@@ -1,0 +1,15 @@
+[
+    {
+        "Repo-Name": "HttpAnimations Windows Apps repo",
+        "Movies": {
+            "chilledwindows.exe": {
+                "Name": "chilledwindows.exe | EXE ONLY",
+                ".Torrent": "https://archive.org/download/chilledwindows_2017/chilledwindows.exe",
+                "MagnetUrl": "https://archive.org/download/chilledwindows_2017/chilledwindows.exe",
+                "Icon": "https://archive.org/services/img/chilledwindows_2017",
+                "HasStreamURL": false,
+                "StreamURL": "stream.mp4"
+            }
+        }
+    }
+]
