@@ -95,3 +95,6 @@ Follow these steps to run a live site using your local hardware:
    chmod +x Server.sh
    ```
 4) Run the website, and the IP address and port will be displayed (public IPs).
+    ```bash
+    ./Server.sh
+    ```
