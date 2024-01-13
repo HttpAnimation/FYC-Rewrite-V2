@@ -1,6 +1,6 @@
 ## FYC Rewrite-V2
 
-This file is for installing versions of FYC if you would like to install on branch of FYC for editing or hosting a repo either fork with repo AND MAKE SURE KEEP ONLY MAIN IS OFF or click [here](Branchs.md) for a local branch only install.
+This file is for installing versions of FYC if you would like to install on a branch of FYC for editing or hosting a repo either fork with the repo AND MAKE SURE KEEP ONLY MAIN IS OFF or click [here](Branchs.md) for a local branch only install.
 
 To install a version open a terminal and run the following command.
 
