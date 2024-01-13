@@ -1,0 +1,15 @@
+[
+    {
+        "Repo-Name": "HttpAnimations WiiU repo",
+        "Movies": {
+            "1080 Snowboarding WiiU": {
+                "Name": "1080 Snowboarding WiiU",
+                ".Torrent": "https://archive.org/download/1080-snowboarding/1080-snowboarding_archive.torrent",
+                "MagnetUrl": "magnet:?xt=urn:btih:7ZUM6F5HA4RC24H5ATSTTTMVBIQVNNXB&amp;dn=1080-snowboarding&amp;tr=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce",
+                "Icon": "https://upload.wikimedia.org/wikipedia/en/thumb/0/04/1080snowboardingbox.jpg/220px-1080snowboardingbox.jpg",
+                "HasStreamURL": false,
+                "StreamURL": "stream.mp4"
+            }
+        }
+    }
+]
