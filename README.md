@@ -31,7 +31,7 @@ If you wish to stream your FYC page, you can choose one of the following methods
 1) Fork the repository
 2) Host a network site
 
-Each method has its own pros and cons.
+Each method has its pros and cons.
 
 ### Streaming/Forking - Information
 
@@ -46,7 +46,7 @@ Hosting is the best way to have an FYC site, but it has some downsides. No one o
 Follow these steps to run a live fork of FYC using GitHub:
 
 1) Install FYC using the provided command.
-2) Change directory to the FYC-Rewrite V2 folder:
+2) Change the directory to the FYC-Rewrite V2 folder:
    ```bash
    cd FYC-Rewrite\ V2
    ```
@@ -62,7 +62,7 @@ Follow these steps to run a live fork of FYC using GitHub:
 
 Follow these steps to run a live site using your local hardware:
 
-1) Change directory to where the FYC files are located.
+1) Change the directory to where the FYC files are located.
 2) Download the server script:
    ```bash
    wget https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/main/Server.sh
