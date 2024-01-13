@@ -6,7 +6,7 @@ This page is documentation for the repo system that FYC uses.
 2) Basic sense.
 
 ## Starting
-First make you're repo folder to do this run the command listed below make sure to replace repo-name with you're repo's name.
+First, make your repo folder to do this run the command listed below and make sure to replace the repo name with your repo's name.
 
 ```bash
 mkdir repo-name
@@ -18,7 +18,7 @@ Open the repo with [VSC](https://code.visualstudio.com/)
 ```bash
 code .
 ```
-If you are not using [VSC](https://code.visualstudio.com/) you can just open the folder with your's but you should now see a blank folder in [VSC](https://code.visualstudio.com/) make a new file called on of the following on witch you are making a repo for.
+If you are not using [VSC](https://code.visualstudio.com/) you can just open the folder with yours but you should now see a blank folder in [VSC](https://code.visualstudio.com/) make a new file called one of the following on which you are making a repo for.
 ```
 Linux-Repo.json
 Movies-Repo.json
@@ -41,15 +41,15 @@ Once you have you're file made copy this template that is also listed below.
     }
 ]
 ```
-Make sure not to replace the json code below with something else as it will break your repo.
+Make sure not to replace the JSON code below with something else as it will break your repo.
 ```json
         "Movies": {
 ```
 ## Adding a torrent
-This part will go over making a torrent for you're repo.
+This part will go over making a torrent for your repo.
 
 ### Repo name
-1) First make your repo name to do so replace **NAMEHERE** with the name you want for this let's use **Dafly**
+1) First make your repo name do so replace **NAMEHERE** with the name you want for this let's use **Dafly**
     ```json
     "Repo-Name": "NAMEHERE",
     ```
@@ -57,7 +57,7 @@ This part will go over making a torrent for you're repo.
     "Repo-Name": "Dafly",
     ```
 ### Torrent name
-2) Now we can make a item for this am gonna use this [Archive.org listing](https://archive.org/details/silent-santa-claus). First add the torrent name
+2) Now we can make an item for this am gonna use this [Archive.org listing](https://archive.org/details/silent-santa-claus). First add the torrent name
     ```json
     "Torrent name": {
         "Name": "Torrent name",
@@ -75,7 +75,7 @@ This part will go over making a torrent for you're repo.
     ".Torrent": "https://archive.org/download/silent-santa-claus/silent-santa-claus_archive.torrent",
     ```
 ### Manget link
-4) Now we can go about adding the magnet link this should always start ***magnet:?*** if you only have a .torrent file head over to [this](https://nutbread.github.io/t2m/) website to get a magnet url for that file.
+4) Now we can go about adding the magnet link this should always start ***magnet:?*** If you only have a .torrent file head over to [this](https://nutbread.github.io/t2m/) website to get a magnet url for that file.
     ```json
     "MagnetUrl": "manget",
     ```
@@ -83,7 +83,7 @@ This part will go over making a torrent for you're repo.
     "MagnetUrl": "magnet:?xt=urn:btih:Q7MIUYJHI26QJIRGISQIO6QFIBDA572P&dn=silent-santa-claus&tr=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce",
     ```
 ### Icon
-5) You can now add a icon this is the photo that will get displayed on the fyc website you might have to host this your self or use a free photo upload site.
+5) You can now add an icon this is the photo that will get displayed on the fyc website you might have to host this yourself or use a free photo upload site.
     ```json
     "Icon": "photo.png",
     ```
@@ -91,7 +91,7 @@ This part will go over making a torrent for you're repo.
     "Icon": "icon.jpg",
     ```
 ### Streaming
-6) For streaming this is gonna be a raw video they can go to insted then downloading. If you don't have this keep this false if you do then can free to be set to true.
+6) For streaming this is gonna be a raw video they can go to instead then downloading. If you don't have this keep this false if you do then can be set to true.
     ```json
     "HasStreamURL": false,
     ```
