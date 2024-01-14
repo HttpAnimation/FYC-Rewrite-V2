@@ -53,8 +53,8 @@ fetch('../Configs/Replers/EBook-Repo.json')
                     showError(`Error fetching repo data from ${repoURL}.`);
                 }
             } catch (error) {
-                console.error(`Error fetching repo data from ${repoURL}:`, error);
-                showError(`Error fetching repo data from ${repoURL}.`);
+                console.error(`Error fetching repo data from you might need cross origin ${repoURL}:`, error);
+                showError(`Error fetching repo data from you might need cross origin ${repoURL}.`);
             }
         };
 
@@ -65,7 +65,7 @@ fetch('../Configs/Replers/EBook-Repo.json')
         });
     })
     .catch(error => {
-        console.error('Error fetching repo list:', error);
+        console.error('Error fetching repo list you might need cross origin:', error);
     });
 
 console.log('macOS.js | Loaded');

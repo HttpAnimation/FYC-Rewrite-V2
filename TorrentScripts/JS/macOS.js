@@ -65,7 +65,7 @@ fetch('../Configs/Replers/macOS-Repo.json')
         });
     })
     .catch(error => {
-        console.error('Error fetching repo list:', error);
+        console.error('Error fetching repo list you might need cross origin:', error);
     });
 
 console.log('macOS.js | Loaded');

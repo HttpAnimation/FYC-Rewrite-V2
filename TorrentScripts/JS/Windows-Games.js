@@ -65,7 +65,7 @@ fetch('../Configs/Replers/Windows-Games-Repo.json')
         });
     })
     .catch(error => {
-        console.error('Error fetching repo list:', error);
+        console.error('Error fetching repo list you might need cross origin:', error);
     });
 
 console.log('Windows-Games.js | Loaded');

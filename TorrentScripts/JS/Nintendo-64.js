@@ -65,7 +65,7 @@ fetch('../Configs/Replers/Nintendo-64-Repo.json')
         });
     })
     .catch(error => {
-        console.error('Error fetching repo list:', error);
+        console.error('Error fetching repo list you might need cross origin:', error);
     });
 
 console.log('Nintendo-64.js | Loaded');
