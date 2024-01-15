@@ -15,6 +15,12 @@ function handleButtonClick(buttonName, link) {
     }
 }
 
+// Function to handle source button clicks
+function handleSourceButtonClick(sourceUrl) {
+    console.log(`Source button clicked. Opening source URL: ${sourceUrl}`);
+    window.open(sourceUrl, '_blank');
+}
+
 // Fetch and process JSON data from multiple repositories
 fetch('../Configs/Replers/Linux-Repo.json')
     .then(response => response.json())
@@ -38,6 +44,7 @@ fetch('../Configs/Replers/Linux-Repo.json')
                             <img src="${movie['Icon']}" alt="Movie Icon">
                             <a href="${movie['.Torrent']}" target="_blank" class="movie-button">Download Torrent</a>
                             <a href="${movie['MagnetUrl']}" class="movie-button">Magnet Link</a>
+                            <button class="source-button" onclick="handleSourceButtonClick('${movie['Source']}')">Source</button>
                         `;
                         if (movie['HasStreamURL'] === true) {
                             const streamButton = document.createElement('a');
@@ -65,7 +72,7 @@ fetch('../Configs/Replers/Linux-Repo.json')
         });
     })
     .catch(error => {
-        console.error('Error fetching repo list you might need cross origin:', error);
+        console.error('Error fetching repo list you might need cross-origin:', error);
     });
 
 console.log('Linux.js | Loaded');

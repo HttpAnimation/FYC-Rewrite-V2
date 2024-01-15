@@ -22,7 +22,7 @@ function handleSourceButtonClick(sourceUrl) {
 }
 
 // Fetch and process JSON data from multiple repositories
-fetch('../Configs/Replers/EBook-Repo.json')
+fetch('../Configs/Replers/Videogame-Videos-Repo.json')
     .then(response => response.json())
     .then(data => {
         const repositories = data[0]['Repositories'];
@@ -75,4 +75,4 @@ fetch('../Configs/Replers/EBook-Repo.json')
         console.error('Error fetching repo list you might need cross-origin:', error);
     });
 
-console.log('EBook.js | Loaded');
+console.log('Videogame-Videos.js | Loaded');
