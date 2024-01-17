@@ -1,51 +1,44 @@
-# FYC-Rewrite V2
-
-FYC (Fetch Your Content) provides a convenient way to load JSON data for torrents. It's important to note that FYC is not intended for piracy, so please refrain from using it for such purposes. UwU.
-
-## Installation
-
-To install FYC-Rewrite V2, follow the instructions in the [Installers.md](Installers.md) file. For the latest stable version, use the following terminal command:
-
+# FYC
+FYC is a getting torrenting easyly without sailing seas.
+## Installing
+To install FYC open a terminal and type the following command listed below note that [Windows](https://www.microsoft.com/en-us/windows?r=1) is not tested.
 ```bash
 git clone -b Stable https://github.com/HttpAnimation/FYC-Rewrite-V2.git && echo 'FYC has been installed' && cd FYC-Rewrite-V2
 ```
 
-## Repositories
+## Running
+Open the **index.html** in the FYC folder if you see nothing show up you may need to allow Crocs everywhere.
 
-Repositories serve as the means to get data into FYC. Refer to the documentation [here](https://github.com/HttpAnimation/FYC-Rewrite-V2/tree/Repo-docs) for more details.
-
-## Reporting Issues
-
-If you encounter any issues, please report them on the [issue page](https://github.com/HttpAnimation/FYC-Rewrite-V2/issues).
-
-## Known Issues
-
-Here is a list of known issues that are currently being addressed:
-
-1) The stream button does not appear even when the string is true.
+## Mods
+Mods are a way to add stuff to FYC even something happends with every repo in the world. To add a mod open the FYC-Rewrite V2 folder witch is most likly stored here **/home/$user/home** then open the Mods folder and drag and drop the folder of your mod into there then compile if you would like to make a mod read [this](https://github.com/HttpAnimation/FYC-Rewrite-V2/blob/Mod-Docs/README.md) page you can only compile mods with [macOS](https://www.apple.com/macos) and Linux [Windows](https://www.microsoft.com/en-us/windows) will not work [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) on [Windows](https://www.microsoft.com/en-us/windows) will work tho.
+```bash
+./Compile.sh
+```
+if you need to allow it to run on your distro 
+```bash
+chmod +x Compile.sh
+```
 
 ## Adding a repo
-This guide will go over adding a repo to FYC
+To add a repo open the FYC folder with the terminal and **cd** over to wherever it's downloaded the default will be **/home/$user/home** it might be different so keep that in mind but once they run one of the following command **[nano](https://www.nano-editor.org/)** is gonna be installed for almost every distro and [macOS](https://www.apple.com/macos) and **[kate](https://kate-editor.org/)** is gonna be included on most systems with [KDE Plasma](https://kde.org/plasma-desktop/) installed you can also open the file manually if you don't have one of the following IDEs installed.
 
-1) Open you're FYC folder and head over to Configs/Replers if you run ls it should look something like this
-    ```bash
-    httpanimations@Https-iMac Replers % ls
-    Andriod-Repo.json  Linux-Repo.json   Movie-Repo.json   TV-Repo.json   Windows-Apps-Repo.json  Windows-Games-Repo.json macOS-Repo.json
-    httpanimations@Https-iMac Replers % 
-    ```
-2) Open the repo file you want to add a repo to for exp let's use TV-Repo.json
+```
+kate Configs/Replers/Repo.json
+```
+```bash
+kate Configs/Replers/Repo.json
+```
+Once you have the file opened add a **,** at the end of your last repo URL for an example it may look like the following listed below.
+```json
+........com/repo.json",
+```
+Add a new line under the **,** and add **""** to that line and you should get something like this.
+```
+........com/repo.json",
+"Gffg://100%ARealURL.json"
+```
+If you add another repo make sure to add the **,** again it just tells [JSON](https://www.json.org/json-en.html) that there is a new repo am planning on making a GUI for managing repos without no code editing but for now this is the way.
 
-3) add a , at the end of your first repo then add "URL" on a new line
-    ```json
-    [
-        {
-            "Repositories": [
-                "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/Repo/TV-Repo.json",
-                "http://localhost:8009/TV-Repo.json"
-            ]
-        }
-    ]
-    ```
 
 ## Streaming
 
@@ -69,9 +62,9 @@ Hosting is the best way to have an FYC site, but it has some downsides. No one o
 Follow these steps to run a live fork of FYC using GitHub:
 
 1) Install FYC using the provided command.
-2) Change the directory to the FYC-Rewrite V2 folder:
+2) Change the directory to the FYC folder:
    ```bash
-   cd FYC-Rewrite\ V2
+   cd FYC-Rewrite-V2
    ```
 3) Download a new README file to replace the old one:
    ```bash
@@ -83,18 +76,17 @@ Follow these steps to run a live fork of FYC using GitHub:
 
 ### Streaming/Hosting - Running
 
-Follow these steps to run a live site using your local hardware:
+Follow these steps to run a live site using your local hardware this will not work on [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) only real Linux distros and [macOS](https://www.apple.com/macos):
 
-1) Change the directory to where the FYC files are located.
-2) Download the server script:
-   ```bash
-   wget https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/main/Server.sh
-   ```
-3) Allow the script to run:
-   ```bash
-   chmod +x Server.sh
-   ```
-4) Run the website, and the IP address and port will be displayed (public IPs).
+7) Install the server 
+    ```bash
+    https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/main/Server.sh
+    ```
+6) Run the website, and the IP address and port will be displayed (public IPs) **MAKE SURE YOU ARE NOT IN SUDO**.
     ```bash
     ./Server.sh
+    ```
+7) you may run into issues saying you don't have permission if so allow the script to do stuff by running the following command listed below
+    ```bash
+    chmod +x Server.sh
     ```
