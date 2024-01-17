@@ -80,7 +80,7 @@ Follow these steps to run a live site using your local hardware this will not wo
 
 7) Install the server 
     ```bash
-    https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/main/Server.sh
+    git clone https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/main/Server.sh
     ```
 6) Run the website, and the IP address and port will be displayed (public IPs) **MAKE SURE YOU ARE NOT IN SUDO**.
     ```bash
