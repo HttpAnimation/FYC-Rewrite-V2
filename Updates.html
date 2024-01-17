@@ -10,7 +10,6 @@
     <div id="sidebar">
         <center><h3>FYC-Rewrite V2</h3></center>
         <a href="index.html" class="movie-button">Home</a>
-        <a href="https://github.com/HttpAnimation/FYC-Rewrite-V2" class="movie-button">Github</a>
     </div>
     <center><h1>Update command: <p><h4><pre><code>git clone -b Stable https://github.com/HttpAnimation/FYC-Rewrite-V2.git && echo 'FYC has been installed' && cd FYC-Rewrite-V2</code></pre></h4></p></h1></center>
     <center><h1>Update log:</h1></center>
@@ -30,26 +29,35 @@
         fetch('https://api.github.com/repos/HttpAnimation/FYC-Rewrite-V2/branches')
             .then(res => res.json())
             .then(branches => {
-                // Create an HTML string to display commits for each branch
+                // Create an array to store all commits
+                const allCommits = [];
+
+                // Fetch commits for each branch
                 const fetchCommitsPromises = branches.map(branch => {
                     return fetch(`https://api.github.com/repos/HttpAnimation/FYC-Rewrite-V2/commits?sha=${branch.name}`)
                         .then(res => res.json())
                         .then(commits => {
-                            // Create an HTML string for commits of each branch
-                            const commitsHTML = commits.map(commit => {
-                                const commitMessage = commit.commit.message;
-                                const commitTimestamp = new Date(commit.commit.committer.date);
-                                const formattedTimestamp = commitTimestamp.toLocaleString();
-                                return `<div><strong>Branch:</strong> ${branch.name}<br><strong>Commit Message:</strong> ${commitMessage}<br><strong>Timestamp:</strong> ${formattedTimestamp}</div>`;
-                            }).join('');
-                            return commitsHTML;
+                            // Add commits with branch information to the array
+                            allCommits.push(...commits.map(commit => ({ ...commit, branch: branch.name })));
                         });
                 });
 
-                // When all promises are resolved, set the HTML content in the designated element
+                // When all promises are resolved, sort the commits by timestamp
                 Promise.all(fetchCommitsPromises)
-                    .then(commitsHTMLArray => {
-                        document.getElementById('commits').innerHTML = commitsHTMLArray.join('');
+                    .then(() => {
+                        allCommits.sort((a, b) => new Date(b.commit.committer.date) - new Date(a.commit.committer.date));
+
+                        // Create an HTML string for sorted commits
+                        const commitsHTML = allCommits.map(commit => {
+                            const branchName = commit.branch;
+                            const commitMessage = commit.commit.message;
+                            const commitTimestamp = new Date(commit.commit.committer.date);
+                            const formattedTimestamp = commitTimestamp.toLocaleString();
+                            return `<div><strong>Branch:</strong> ${branchName}<br><strong>Commit Message:</strong> ${commitMessage}<br><strong>Timestamp:</strong> ${formattedTimestamp}</div>`;
+                        }).join('');
+
+                        // Set the HTML content in the designated element
+                        document.getElementById('commits').innerHTML = commitsHTML;
                     })
                     .catch(error => {
                         console.error('Error fetching commit data:', error);
