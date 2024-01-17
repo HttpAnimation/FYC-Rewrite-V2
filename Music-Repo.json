@@ -1,0 +1,16 @@
+[
+    {
+        "Repo-Name": "HttpAnimations Music repo",
+        "Movies": {
+            "Music Match Jukebox": {
+                "Name": "Music Match Jukebox",
+                ".Torrent": "https://archive.org/download/music-match-jukebox-1999-08-english-cd/music-match-jukebox-1999-08-english-cd_archive.torrent",
+                "MagnetUrl": "magnet:?xt=urn:btih:PBE6MKFWYQKI346SLPGNUHVOW5IQSFDP&dn=music-match-jukebox-1999-08-english-cd&tr=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce",
+                "Icon": "https://archive.org/download/music-match-jukebox-1999-08-english-cd/disc.jpg",
+                "Source": "https://archive.org/details/music-match-jukebox-1999-08-english-cd",
+                "HasStreamURL": false,
+                "StreamURL": "stream.mp4"
+            }
+        }
+    }
+]
