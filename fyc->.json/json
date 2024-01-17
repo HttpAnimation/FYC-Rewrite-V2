@@ -1,0 +1,47 @@
+[
+    {
+        "Name": "Pages2Github",
+        "DownloadURL": "https://github.com/HttpAnimation/FYC-Mod-Downloader/releases/download/zips/Pages2Github.zip",
+        "details": "Takes a page link and gives the GitHub link"
+    },
+    {
+        "Name": "Photo",
+        "DownloadURL": "https://github.com/HttpAnimation/FYC-Mod-Downloader/releases/download/zips/Photo.zip",
+        "details": "Simple exp of an img src"
+    },
+    {
+        "Name": "Streamer",
+        "DownloadURL": "https://github.com/HttpAnimation/FYC-Mod-Downloader/releases/download/zips/Sreamer.zip",
+        "details": "Takes a URL video/photo and displays it"
+    },
+    {
+        "Name": "Steam-Free",
+        "DownloadURL": "https://github.com/HttpAnimation/FYC-Mod-Downloader/releases/download/zips/Steam.Free.zip",
+        "details": "A GitHub repo of free stuff on Steam"
+    },
+    {
+        "Name": "Text",
+        "DownloadURL": "https://github.com/HttpAnimation/FYC-Mod-Downloader/releases/download/zips/Text.zip",
+        "details": "A simple exp of text"
+    },
+    {
+        "Name": "lioxryt.github.io",
+        "DownloadURL": "https://github.com/HttpAnimation/lioxryt.github.io-FYC/releases/download/download/lioxryt.github.io.7z",
+        "details": "A port of the website to a FYC mod"
+    },
+    {
+        "Name": "Template-Display-Webpage",
+        "DownloadURL": "https://github.com/HttpAnimation/Template-Display-Webpage/releases/download/Download/Template-Display-Webpage.7z",
+        "details": "A template for showing a webpage in fyc some sies will need a cross origon to show up and work right use if you are making your mod enbed a site for a live update"
+    },
+    {
+        "Name": "GoEmbed",
+        "DownloadURL": "https://github.com/HttpAnimation/GoEmbed/releases/download/Download/GoEnbed.tar.xz",
+        "details": "This HTML page, titled GoEmbed, features a dark mode user interface with a search box embedded using Google Custom Search Engine. It also includes a Home button for easy navigation."
+    },
+    {
+        "Name": "Countdown-Timer",
+        "DownloadURL": "https://github.com/HttpAnimation/Countdown-Timer/releases/download/Download/Countdown.Timer.tar.xz",
+        "details": "A mod for fyc that is a simple Countdown Timer"
+    }
+]
