@@ -1,5 +1,5 @@
 # FYC
-FYC is a getting torrenting easyly without sailing seas with no VPN needed.
+FYC is a repo system mainly for the web.
 ## Installing
 To install FYC open a terminal and type the following command listed below note that [Windows](https://www.microsoft.com/en-us/windows?r=1) is not tested.
 ```bash
