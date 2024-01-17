@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FYC-Rewrite V2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="sidebar">
+        <center><h3>FYC-Rewrite V2</h3></center>
+        <a href="index.html" class="movie-button">Home</a>
+        <a href="https://github.com/HttpAnimation/FYC-Rewrite-V2" class="movie-button">Github</a>
+    </div>
+    <center><h1>Update command: <p><h4><pre><code>git clone -b Stable https://github.com/HttpAnimation/FYC-Rewrite-V2.git && echo 'FYC has been installed' && cd FYC-Rewrite-V2</code></pre></h4></p></h1></center>
+    <center><h1>Update log:</h1></center>
+    <center><div id="commits"></div></center>
+    <script>
+        document.addEventListener('keydown', (event) => {
+            // Check if the pressed key is 'F'
+            if (event.key === 'F' || event.key === 'f') {
+                const sidebar = document.getElementById('sidebar');
+                // Toggle the visibility of the sidebar
+                sidebar.style.display = (sidebar.style.display === 'none' || sidebar.style.display === '') ? 'block' : 'none';
+            }
+        });
+    </script>
+    <script>
+        // Fetch all branches from GitHub API
+        fetch('https://api.github.com/repos/HttpAnimation/FYC-Rewrite-V2/branches')
+            .then(res => res.json())
+            .then(branches => {
+                // Create an HTML string to display commits for each branch
+                const fetchCommitsPromises = branches.map(branch => {
+                    return fetch(`https://api.github.com/repos/HttpAnimation/FYC-Rewrite-V2/commits?sha=${branch.name}`)
+                        .then(res => res.json())
+                        .then(commits => {
+                            // Create an HTML string for commits of each branch
+                            const commitsHTML = commits.map(commit => {
+                                const commitMessage = commit.commit.message;
+                                const commitTimestamp = new Date(commit.commit.committer.date);
+                                const formattedTimestamp = commitTimestamp.toLocaleString();
+                                return `<div><strong>Branch:</strong> ${branch.name}<br><strong>Commit Message:</strong> ${commitMessage}<br><strong>Timestamp:</strong> ${formattedTimestamp}</div>`;
+                            }).join('');
+                            return commitsHTML;
+                        });
+                });
+
+                // When all promises are resolved, set the HTML content in the designated element
+                Promise.all(fetchCommitsPromises)
+                    .then(commitsHTMLArray => {
+                        document.getElementById('commits').innerHTML = commitsHTMLArray.join('');
+                    })
+                    .catch(error => {
+                        console.error('Error fetching commit data:', error);
+                        document.getElementById('commits').innerHTML = 'Error loading commit information';
+                    });
+            })
+            .catch(error => {
+                console.error('Error fetching branch data:', error);
+                document.getElementById('commits').innerHTML = 'Error loading branch information';
+            });
+    </script>
+    <script type="text/javascript">
+        (function (c, l, a, r, i, t, y) {
+        c[a] = c[a] || function () {
+        (c[a].q = c[a].q || []).push(arguments);
+        };
+        t = l.createElement(r);
+        t.async = true;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        y = l.getElementsByTagName(r)[0];
+        y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "go9ad7tc31");
+    </script>
+</body>
+</html>
