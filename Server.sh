@@ -31,7 +31,7 @@ display_missing_option_error() {
 }
 
 # Parse command line arguments
-while getopts "p:b:h" opt; do
+while getopts "p:bh" opt; do
   case ${opt} in
     p)
       port=$OPTARG
