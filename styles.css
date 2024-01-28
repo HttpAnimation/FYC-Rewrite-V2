@@ -1,6 +1,6 @@
 body {
-    background-color: #121212; /* Dark background color */
-    color: #ffffff; /* Text color */
+    background-color: #121212; 
+    color: #ffffff; 
     font-family: Arial, sans-serif;
     margin: 0;
 }
@@ -11,8 +11,13 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #333333; /* Sidebar background color */
+    background-color: #333333;
     padding-top: 20px;
+    overflow-y: auto; 
+}
+
+#sidebar-container {
+    height: calc(100% - 20px);
 }
 
 #content {
@@ -36,22 +41,22 @@ img {
     display: block;
     margin-top: 10px;
     padding: 10px;
-    background-color: #555555; /* Button background color */
-    color: #ffffff; /* Button text color */
+    background-color: #555555;
+    color: #ffffff;
     text-decoration: none;
     border: none;
     cursor: pointer;
 }
 
 .error-message {
-    background-color: #ff6347; /* Tomato color for error messages */
+    background-color: #ff6347;
     color: #ffffff;
     padding: 10px;
     margin-bottom: 10px;
 }
 
 #content {
-    margin-left: 270px; /* Adjusted margin to push content away from the sidebar */
+    margin-left: 270px; 
     padding: 20px;
 }
 
@@ -59,8 +64,8 @@ img {
     display: block;
     margin-top: 10px;
     padding: 10px;
-    background-color: #555555; /* Button background color */
-    color: #ffffff; /* Button text color */
+    background-color: #555555;
+    color: #ffffff; 
     text-decoration: none;
     border: none;
     cursor: pointer;
