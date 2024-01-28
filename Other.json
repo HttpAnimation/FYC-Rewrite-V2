@@ -1,0 +1,16 @@
+[
+    {
+        "Repo-Name": "HttpAnimations Other repo",
+        "Movies": {
+            "Other": {
+                "Name": "Other",
+                ".Torrent": "",
+                "MagnetUrl": "",
+                "Icon": "photo.png",
+                "Source": "",
+                "HasStreamURL": false,
+                "StreamURL": "stream.mp4"
+            }
+        }
+    }
+]
