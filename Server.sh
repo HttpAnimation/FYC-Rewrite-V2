@@ -61,20 +61,20 @@ if [ "$start_http_server" = true ]; then
     exit 1
   fi
 
-  # Start the Python HTTP server command
+  # Start the Python HTTP server command without SSL
   http_server_command="python3 -m http.server $port --bind $ip_address --directory ."
 
-  # Redirect output to the log file
-  http_server_command+=" > $default_log_file 2>&1 &"
-
   # Start the Python HTTP server in the background
-  eval $http_server_command
+  $http_server_command > $default_log_file 2>&1 &
 
   # Store the process ID of the server
   server_pid=$!
 
-  # Check if the server started successfully
-  if [ $? -ne 0 ]; then
+  # Sleep for a while to allow the server to start
+  sleep 1
+
+  # Check if the server is still running
+  if ! ps -p $server_pid > /dev/null; then
     echo "Failed to start the server."
     exit 1
   fi
@@ -87,6 +87,4 @@ if [ "$start_http_server" = true ]; then
 
   # Wait for the server to finish or until stopped manually
   wait $server_pid
-else
-  echo "No valid option provided. Use '-h' for help."
 fi
