@@ -1,0 +1,16 @@
+[
+    {
+        "Repo-Name": "Offical versions",
+        "Movies": {
+            "Sat-27-Jan-20-2024": {
+                "Name": "Sat-27-Jan-20-2024",
+                ".Torrent": "https://github.com/HttpAnimation/FYC-Rewrite-V2/archive/refs/tags/Sat-27-Jan-20-2024.tar.gz",
+                "MagnetUrl": "manget",
+                "Icon": "https://github.com/HttpAnimation/FYC-Rewrite-V2/blob/main/PFP_1704426442876.png?raw=true",
+                "Source": "https://github.com/HttpAnimation/FYC-Rewrite-V2",
+                "HasStreamURL": false,
+                "StreamURL": "stream.mp4"
+            }
+        }
+    }
+]
