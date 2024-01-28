@@ -18,27 +18,6 @@
     </div>
 
     <script src="JS/thing.js"></script>
-    <script>
-        document.addEventListener('keydown', (event) => {
-            // Check if the pressed key is 'F'
-            if (event.key === 'F' || event.key === 'f') {
-                const sidebar = document.getElementById('sidebar');
-                // Toggle the visibility of the sidebar
-                sidebar.style.display = (sidebar.style.display === 'none' || sidebar.style.display === '') ? 'block' : 'none';
-            }
-        });
-    </script>
-    <script type="text/javascript">
-        (function (c, l, a, r, i, t, y) {
-        c[a] = c[a] || function () {
-        (c[a].q = c[a].q || []).push(arguments);
-        };
-        t = l.createElement(r);
-        t.async = true;
-        t.src = "https://www.clarity.ms/tag/" + i;
-        y = l.getElementsByTagName(r)[0];
-        y.parentNode.insertBefore(t, y);
-        })(window, document, "clarity", "script", "go9ad7tc31");
-        </script>
+    <script src="JS/Sidebar.js"></script>
 </body>
 </html>
