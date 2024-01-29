@@ -24,5 +24,5 @@ echo "No install script rn"
 ```
 #### Curl
 ```bash
-mkdir NPM && cd NPM && curl https://github.com/HttpAnimation/FYC-Rewrite-V2/raw/NPM/Install.sh && curl https://github.com/HttpAnimation/FYC-Rewrite-V2/raw/NPM/index.js && curl https://github.com/HttpAnimation/FYC-Rewrite-V2/raw/NPM/path.ini && chmod +x Install.sh && bash Install.sh
+echo "No install script rn"
 ```
