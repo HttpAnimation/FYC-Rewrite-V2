@@ -44,7 +44,6 @@ wss.on('connection', (ws) => {
   };
 
   ws.on('message', (message) => {
-    // You can handle incoming messages from clients here if needed
   });
 
   ws.on('close', () => {
