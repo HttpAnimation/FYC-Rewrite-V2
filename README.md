@@ -31,12 +31,12 @@ Open a terminal and enter the installation command for wget or curl. If you are 
 
 ### Wget
 ```bash
-echo "No install script rn"
+wget "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever/InstallWget.sh" && chmod +x InstallCurl.sh && ./InstallCurl.sh
 ```
 
 ### Curl
 ```bash
-echo "No install script rn"
+curl "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever/InstallCurl.sh" && chmod +x InstallCurl.sh && ./InstallCurl.sh 
 ```
 
 #### Git
