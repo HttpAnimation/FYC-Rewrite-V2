@@ -14,8 +14,6 @@ if you are using a differnt distro then fedora refer to [here](https://nodejs.or
 
 #### [macOS](https://www.apple.com/macos)
 
-
-
 ```bash
 https://nodejs.org/en/download
 ```
