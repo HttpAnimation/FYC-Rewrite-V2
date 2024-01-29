@@ -15,7 +15,6 @@
                     .then(() => {
                         allCommits.sort((a, b) => new Date(b.commit.committer.date) - new Date(a.commit.committer.date));
 
-                        // Create an HTML string for sorted commits
                         const commitsHTML = allCommits.map(commit => {
                             const branchName = commit.branch;
                             const commitMessage = commit.commit.message;
