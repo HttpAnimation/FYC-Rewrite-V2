@@ -1,2 +1,1 @@
-npm init -y
-npm install express ini
+echo "Install not done yet"
