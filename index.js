@@ -5,7 +5,7 @@ const os = require('os');
 const WebSocket = require('ws');
 
 const app = express();
-const port = 9668;
+const port = 9669;
 const host = '0.0.0.0';
 
 app.use(cors({
