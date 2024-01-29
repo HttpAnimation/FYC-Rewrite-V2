@@ -1,7 +1,7 @@
 {
-  "name": "pie21",
+  "name": "fyc-npm",
   "version": "1.0.0",
-  "description": "Pie21 is a web client for e621 made in HTML, CSS, JS and json.",
+  "description": "This is the main sever for FYC based of Pie21",
   "main": "proxy.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/HttpAnimation/Pie21.git"
+    "url": "git+https://github.com/HttpAnimation/FYC-Rewrite-V2.git"
   },
   "keywords": [
     "css",
@@ -24,9 +24,9 @@
   "author": "HttpAnimations",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/HttpAnimation/Pie21/issues"
+    "url": "https://github.com/HttpAnimation/FYC-Rewrite-V2/issues"
   },
-  "homepage": "https://github.com/HttpAnimation/Pie21#readme",
+  "homepage": "https://github.com/HttpAnimation/FYC-Rewrite-V2#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.18.2",
