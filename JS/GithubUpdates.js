@@ -1,4 +1,3 @@
-        // Fetch all branches from GitHub API
         fetch('https://api.github.com/repos/HttpAnimation/FYC-Rewrite-V2/branches')
             .then(res => res.json())
             .then(branches => {
