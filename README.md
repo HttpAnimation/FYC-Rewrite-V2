@@ -11,6 +11,10 @@ sudo dnf install nodejs
 
 #### [macOS](https://www.apple.com/macos)
 
+#### Other distros
+if you are using a differnt distro then fedora refer to [here](https://nodejs.org/en/download)
+
+
 ```bash
 https://nodejs.org/en/download
 ```
