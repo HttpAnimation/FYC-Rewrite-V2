@@ -36,7 +36,6 @@ const server = app.listen(port, host, () => {
 const wss = new WebSocket.Server({ noServer: true });
 
 wss.on('connection', (ws) => {
-  // Capture console.log messages and send them to the connected clients
   const originalLog = console.log;
   console.log = function (message) {
     originalLog.apply(console, arguments);
