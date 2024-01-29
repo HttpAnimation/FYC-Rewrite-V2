@@ -48,7 +48,6 @@ wss.on('connection', (ws) => {
   });
 
   ws.on('close', () => {
-    // Restore the original console.log when the client disconnects
     console.log = originalLog;
   });
 });
