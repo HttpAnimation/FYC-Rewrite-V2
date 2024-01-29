@@ -9,10 +9,11 @@ Node.js is the runner to run the server.
 sudo dnf install nodejs
 ```
 
-#### [macOS](https://www.apple.com/macos)
-
 #### Other distros
 if you are using a differnt distro then fedora refer to [here](https://nodejs.org/en/download)
+
+#### [macOS](https://www.apple.com/macos)
+
 
 
 ```bash
