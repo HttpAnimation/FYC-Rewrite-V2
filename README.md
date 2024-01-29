@@ -20,7 +20,7 @@ Open a terminal and enter the install command for wget or curl.
 
 #### Wget
 ```bash
-mkdir NPM && cd NPM && wget https://github.com/HttpAnimation/FYC-Rewrite-V2/raw/NPM/Install.sh && wget https://github.com/HttpAnimation/FYC-Rewrite-V2/raw/NPM/index.js && wget https://github.com/HttpAnimation/FYC-Rewrite-V2/raw/NPM/path.ini && chmod +x Install.sh && bash Install.sh
+echo "No install script rn"
 ```
 #### Curl
 ```bash
