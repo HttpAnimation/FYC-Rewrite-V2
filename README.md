@@ -22,7 +22,7 @@ https://nodejs.org/en/download
 If you are using [Windows](https://www.microsoft.com/en-us/windows?r=1s) then note that no help will be provided on the sever and never will [Windows](https://www.microsoft.com/en-us/windows?r=1s) is not surported and may not work at all if you would still like to isntall head [here](https://nodejs.org/en/download).
 
 ## Installing
-Open a terminal and enter the install command for wget or curl.
+Open a terminal and enter the install command for wget or curl if you are on [Windows](https://www.microsoft.com/en-us/windows?r=1s) these commands will not work will need to install manuly.
 
 #### Wget
 ```bash
