@@ -24,7 +24,7 @@ https://nodejs.org/en/download
 If you are using [Windows](https://www.microsoft.com/en-us/windows?r=1s), please note that no help will be provided on the server and it is not supported. It may not work at all. If you still want to install, go [here](https://nodejs.org/en/download).
 
 ## Installing
-Open a terminal and enter the installation command for wget or curl. If you are on [Windows](https://www.microsoft.com/en-us/windows?r=1s), these commands will not work and you will need to install manually.
+Open a terminal and enter the installation command for wget or curl. If you are on [Windows](https://www.microsoft.com/en-us/windows?r=1s), these commands will not work and you will need to install manually from this branch you can install [git](https://gitforwindows.org/) for [Windows](https://www.microsoft.com/en-us/windows?r=1s) with the git install command to get the scripts.
 
 ### Wget
 ```bash
@@ -34,4 +34,9 @@ echo "No install script rn"
 ### Curl
 ```bash
 echo "No install script rn"
+```
+
+#### Git
+```bash
+git clone -b NodeJSSever https://github.com/HttpAnimation/FYC-Rewrite-V2.git
 ```
