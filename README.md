@@ -1,5 +1,9 @@
 # FYC
 FYC is a repo system mainly for the web.
+
+## README
+Github is showing the readme from main/README.md if you are seeing this while one that main branch head over the README.md file that branch for now while I try to find a fix I have no idea why this happends.
+
 ## Installing
 To install FYC open a terminal and type the following command listed below note that [Windows](https://www.microsoft.com/en-us/windows?r=1) is not tested.
 ```bash
