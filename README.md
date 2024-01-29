@@ -62,7 +62,7 @@ Forking the repository is useful when you either cannot use a PC for running a l
 Hosting is the best way to have an FYC site, but it has some downsides. No one outside your network can see your site, so avoid sharing your IP and port on platforms like Discord. Hosting requires a PC running Linux (recommended: [Ubuntu Server](https://ubuntu.com/download/server) or [Debian 12](https://www.debian.org/)). macOS can be used, but it may have some limitations. Notably, Windows or WSL will not work for hosting.
 
 ### Streaming/Forking - Running
-### Streaming is being reworked and this methed will be out of date the gh-pages version will stay in place. 
+### Streaming is being reworked and this methed will be out of date the gh-pages version will stay in place.
 Follow these steps to run a live fork of FYC using GitHub:
 
 1) Install FYC using the provided command.
