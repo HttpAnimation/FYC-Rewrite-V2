@@ -1,5 +1,5 @@
 # FYC/NodeJSSever
-This branch is for a NPM server for Unix/[macOS](https://www.apple.com/macos) and [Linux](https://github.com/torvalds/linux)
+This branch is for a NPM server for Unix/[macOS](https://www.apple.com/macos) and [Linux](https://github.com/torvalds/linux).
 
 ## Node.js
 Node.js is the runner to run the server.
