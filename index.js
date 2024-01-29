@@ -1,6 +1,5 @@
 const express = require('express');
 const cors = require('cors');
-const fetch = require('node-fetch');
 const path = require('path');
 const os = require('os');
 const WebSocket = require('ws');
@@ -19,21 +18,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
   res.send('Hello, this is Pie21 proxy server!');
-});
-
-app.get('/e621', async (req, res) => {
-  try {
-    const response = await fetch('https://e621.net' + req.url, {
-      headers: {
-        'User-Agent': req.get('User-Agent'),
-      },
-    });
-    const data = await response.json();
-    res.json(data);
-  } catch (error) {
-    console.error('Error proxying request:', error);
-    res.status(500).send('Internal Server Error');
-  }
 });
 
 app.get('*', (req, res) => {
