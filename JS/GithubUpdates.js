@@ -7,7 +7,6 @@
                     return fetch(`https://api.github.com/repos/HttpAnimation/FYC-Rewrite-V2/commits?sha=${branch.name}`)
                         .then(res => res.json())
                         .then(commits => {
-                            // Add commits with branch information to the array
                             allCommits.push(...commits.map(commit => ({ ...commit, branch: branch.name })));
                         });
                 });
