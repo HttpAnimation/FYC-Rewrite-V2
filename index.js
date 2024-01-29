@@ -49,7 +49,6 @@ wss.on('connection', (ws) => {
   });
 });
 
-// Upgrade the HTTP server to a WebSocket server
 server.on('upgrade', (request, socket, head) => {
   wss.handleUpgrade(request, socket, head, (ws) => {
     wss.emit('connection', ws, request);
