@@ -18,6 +18,9 @@ if you are using a differnt distro then fedora refer to [here](https://nodejs.or
 https://nodejs.org/en/download
 ```
 
+#### [Windows](https://www.microsoft.com/en-us/windows?r=1s)
+If you are using [Windows](https://www.microsoft.com/en-us/windows?r=1s) then note that no help will be provided on the sever and never will [Windows](https://www.microsoft.com/en-us/windows?r=1s) is not surported and may not work at all if you would still like to isntall head [here](https://nodejs.org/en/download).
+
 ## Installing
 Open a terminal and enter the install command for wget or curl.
 
