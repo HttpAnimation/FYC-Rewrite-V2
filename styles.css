@@ -44,7 +44,7 @@ img {
 }
 
 .error-message {
-    background-color: #ff6347; /* Tomato color for error messages */
+    background-color: #ff6347;
     color: #ffffff;
     padding: 10px;
     margin-bottom: 10px;
