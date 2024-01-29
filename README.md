@@ -2,6 +2,9 @@
 
 This branch is for an NPM server for Unix/[macOS](https://www.apple.com/macos) and [Linux](https://github.com/torvalds/linux).
 
+## NOTE
+This new server is still in testing and may not work right for now this is a dev-bramch you are free to use it but expect some bugs if you do have bugs pls report the.
+
 ## Node.js
 Node.js is the runner used to run the server.
 
