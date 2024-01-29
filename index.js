@@ -32,7 +32,6 @@ const server = app.listen(port, host, () => {
   console.log(`Server is also accessible via http://localhost:${port}`);
 });
 
-// WebSocket setup
 const wss = new WebSocket.Server({ noServer: true });
 
 wss.on('connection', (ws) => {
