@@ -78,18 +78,3 @@ Follow these steps to run a live fork of FYC using GitHub:
 6) Go to the Deployments section and access your website using the provided URL.
 
 ### Streaming/Hosting - Running
-
-Follow these steps to run a live site using your local hardware this will not work on [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) only real Linux distros and [macOS](https://www.apple.com/macos):
-
-7) Install the server 
-    ```bash
-    git clone https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/main/Server.sh
-    ```
-6) Run the website, and the IP address and port will be displayed (public IPs); Note that sudo might not work make sure you are in a user account.
-    ```bash
-    ./Server.sh
-    ```
-7) you may run into issues saying you don't have permission if so allow the script to do stuff by running the following command listed below
-    ```bash
-    chmod +x Server.sh
-    ```
