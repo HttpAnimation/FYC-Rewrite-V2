@@ -18,7 +18,7 @@ function handleSourceButtonClick(sourceUrl) {
     window.open(sourceUrl, '_blank');
 }
 
-fetch('Configs/Replers/Versions.json')
+fetch('repos/Versions.json')
     .then(response => response.json())
     .then(data => {
         const repositories = data[0]['Repositories'];
