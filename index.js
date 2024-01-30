@@ -28,7 +28,6 @@ const server = app.listen(port, host, () => {
   const serverAddress = server.address();
   const ip = serverAddress.address === '0.0.0.0' ? getLocalIP() : serverAddress.address;
   console.log(`Server listening at http://${ip}:${port}`);
-  console.log(`Server is also accessible via http://${ip}:${port}`);
   console.log(`Server is also accessible via http://localhost:${port}`);
 });
 
