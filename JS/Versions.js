@@ -38,8 +38,8 @@ fetch('Configs/Replers/Versions.json')
                         movieElement.innerHTML = `
                             <h1>${movie['Name']}</h1>
                             <img src="${movie['Icon']}" alt="Movie Icon">
-                            <a href="${movie['.Torrent']}" target="_blank" class="movie-button">Download Torrent</a>
-                            <a href="${movie['MagnetUrl']}" class="movie-button">Magnet Link</a>
+                            <a href="${movie['.Torrent']}" target="_blank" class="movie-button">Download Tar.gz / Linux | macOS</a>
+                            <a href="${movie['MagnetUrl']}" class="movie-button">Download Zip / Windows</a>
                             <button class="source-button" onclick="handleSourceButtonClick('${movie['Source']}')">Source</button>
                         `;
                         if (movie['HasStreamURL'] === true) {
