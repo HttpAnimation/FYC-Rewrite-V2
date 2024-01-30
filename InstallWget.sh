@@ -37,6 +37,8 @@ if [ "$answer" = "y" ] || [ "$answer" = "yes" ]; then
   echo "Now installing Wonnix's"
   chmod +x NewWonnix.sh
   ./NewWonnix.sh
+  echo "Allowing Run.sh to run"
+  chmod +x Run.sh
   echo "Done installing Wonnix's"
   echo "Removing installers goodbuy mate :)"
   echo "Removing NewWonnix.sh"
