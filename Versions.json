@@ -46,6 +46,15 @@
                 "Source": "https://github.com/HttpAnimation/FYC-Rewrite-V2",
                 "HasStreamURL": false,
                 "StreamURL": "stream.mp4"
+            },
+            "Thu-30-Jan-10.31-2024": {
+                "Name": "Thu-30-Jan-10.31-2024",
+                ".Torrent": "https://github.com/HttpAnimation/FYC-Rewrite-V2/archive/refs/tags/Thu-30-Jan-10.31-2024Sat-27-Jan-10.31-2024.tar.gz",
+                "MagnetUrl": "https://github.com/HttpAnimation/FYC-Rewrite-V2/archive/refs/tags/Thu-30-Jan-10.31-2024Sat-27-Jan-10.31-2024.zip",
+                "Icon": "https://github.com/HttpAnimation/FYC-Rewrite-V2/blob/main/PFP_1704426442876.png?raw=true",
+                "Source": "https://github.com/HttpAnimation/FYC-Rewrite-V2",
+                "HasStreamURL": false,
+                "StreamURL": "stream.mp4"
             }
         }
     }

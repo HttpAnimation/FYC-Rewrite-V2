@@ -1,8 +1,8 @@
 ,
-        "Torrent name": {
-            "Name": "Torrent name",
+        "name": {
+            "Name": "name",
             ".Torrent": "TarGZ",
-            "MagnetUrl": "",
+            "MagnetUrl": "ZIP",
             "Icon": "https://github.com/HttpAnimation/FYC-Rewrite-V2/blob/main/PFP_1704426442876.png?raw=true",
             "Source": "https://github.com/HttpAnimation/FYC-Rewrite-V2",
             "HasStreamURL": false,
