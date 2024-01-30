@@ -48,5 +48,5 @@ git clone -b NodeJSSever https://github.com/HttpAnimation/FYC-Rewrite-V2.git
 To run the node.js server once installed open the place where it is installed then run the following command listed below.
 
 ```bash
-node run Proxy.js
+node proxy.js
 ```
