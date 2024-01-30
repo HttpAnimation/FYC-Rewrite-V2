@@ -70,4 +70,4 @@ fetch('repos/Versions.json')
         console.error('Error fetching repo list you might need cross-origin:', error);
     });
 
-console.log('Versions.js | Loaded');
+console.log('Versions.js | Loaded'); 
