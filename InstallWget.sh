@@ -33,6 +33,17 @@ if [ "$answer" = "y" ] || [ "$answer" = "yes" ]; then
     echo "Done moving $file to public"
   done
   echo "All files moved to public folder."
+  echo "Now installing Wonnix's"
+  chmod +x NewWonnix.sh
+  ./NewWonnix.sh
+  echo "Done installing Wonnix's"
+  echo "Removing installers goodbuy mate :)"
+  echo "Removing NewWonnix.sh"
+  rm NewWonnix.sh
+  echo "Done"
+  echo "Removing my self"
+  rm InstallWget.sh
+  echo "Goodbye. "
 else
   echo "Exiting the script."
   rm InstallWget.sh
