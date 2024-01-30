@@ -40,6 +40,9 @@ if [ "$answer" = "y" ] || [ "$answer" = "yes" ]; then
   echo "Allowing Run.sh to run"
   chmod +x Run.sh
   echo "Done installing Wonnix's"
+  echo "Renaming index.js to proxy.js"
+  mv index.js proxy.js
+  echo "Done renameing"
   echo "Removing installers goodbuy mate :)"
   echo "Removing NewWonnix.sh"
   rm NewWonnix.sh
