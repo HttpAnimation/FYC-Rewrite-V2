@@ -13,49 +13,55 @@
     </div>
     <div id="content">
         <center><h1>Server</h1></center>
-        <center><h4>The server on FYC allows you to broardcast the FYC website network wide while as a real webiste</h4></center>
-        <cetner><h1>Install: 
-            <p>
-                <h4>To install open a termina and cd into where FYC is install for a expmale the cd command may look like this 
+        <center><h4>The server on FYC allows you to broadcast the FYC website network-wide as a real website.</h4></center>
+        <center><h1>Install:</h1></center>
+        <p>
+            <center>
+                <h4>To install, open a terminal and navigate to the directory where FYC is installed. For example, the cd command may look like this:</h4>
+            </center>
+            <pre>
+                <code>
+                    $ cd /home/${user}/FYC-Rewrite-V2
+                </code>
+            </pre>
+            <center>
+                <h4>Once you are in the root directory (where all the .html files are located), you can check by running ls. For example:</h4>
+            </center>
+            <pre>
+                <code>
+                    $ ls
+                    index.html script.js css.css about.html JS CSS Configs...
+                </code>
+            </pre>
+            <center>
+                <h4>
+                    Now, you can run the install command. The following command is listed below:
+                </h4>
+            </center>
+            <pre>
+                <code>
+                    $ wget "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever/InstallWget.sh" && chmod +x InstallWget.sh && ./InstallWget.sh
+                </code>
+            </pre>
+            <center>
+                <h4>If the command fails to run, you will need npm/node.js. To install, follow these steps:</h4>
+            </center>
+            <ol>
+                <li>
+                    <h4>
+                        If you are using Fedora, run the following command:
+                    </h4>
                     <pre>
                         <code>
-                            $cd /home/${user}/FYC-Rewrite-V2
+                            $ sudo dnf install nodejs
                         </code>
                     </pre>
-                    <p>
-                        <h4>Once cd'ed into make sure that you are in the root dir this means where all the .html files are you can cheack by running ls for an expmale 
-                            <pre>
-                                <code>
-                                $ls
-                                index.html script.js css.css about.html JS CSS Configs...
-                                </code>
-                            </pre>
-                            <p>
-                                <h4>
-                                    Now you can run the install command witch is the following command listed bewlow.
-                                    <pre>
-                                        <code>
-                                            wget "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever/InstallWget.sh" && chmod +x InstallWget.sh && ./InstallWget.sh
-                                        </code>
-                                    </pre>
-                                    <p>
-                                        <h4>If the command failed to run you will need npm/node.js to get this do this <p>
-                                            1) Fedora if you are using Fedora then you can just run the following command.
-                                            <pre>
-                                                <code>
-                                                    sudo dnf install nodejs
-                                                </code>
-                                            </pre>
-                                            2) If you are on anything else head here | https://nodejs.org/en/download
-                                        </p></h4>
-                                    </p>
-                                </h4>
-                            </p>
-                        </h4>
-                    </p>
-                </h4>
-            </p>
-        </h1></cetner>
+                </li>
+                <li>
+                    <h4>If you are using any other operating system, visit this link to download npm/node.js: <a href="https://nodejs.org/en/download">https://nodejs.org/en/download</a></h4>
+                </li>
+            </ol>
+        </p>
     </div>
 </body>
 </html>
