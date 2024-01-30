@@ -1,7 +1,7 @@
 {
   "name": "fyc-npm",
   "version": "1.0.0",
-  "description": "This is the main sever for FYC based of Pie21",
+  "description": "This is the main sever for FYC based off Pie21",
   "main": "proxy.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
