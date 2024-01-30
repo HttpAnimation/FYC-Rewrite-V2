@@ -1,0 +1,2 @@
+# FYC-Rewrite\ V2/gh-pages/Testing/Online-Offline
+This is test for testing when the user if offline it will show a 404 error as the website will not work at all with out network due to the repo system.
