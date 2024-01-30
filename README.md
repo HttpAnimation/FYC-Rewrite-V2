@@ -59,6 +59,7 @@ Forking the repository is useful when you either cannot use a PC for running a l
 
 ### Streaming/Hosting - Information
 
+Hosting the FYC makes it way more secure and private what you are doing online all you need a unix pc or a server a recommand light wight server is [Fedora server](https://fedoraproject.org/server/) no one but on your network can see what you use the site for for eg. mods/repos.
 
 ### Streaming/Forking - Running
 Follow these steps to run a live fork of FYC using GitHub:
@@ -77,3 +78,18 @@ Follow these steps to run a live fork of FYC using GitHub:
 6) Go to the Deployments section and access your website using the provided URL.
 
 ### Streaming/Hosting - Running
+Follow these steps to run a live server of FYC:
+
+1) Install FYC
+    ```bash
+    git clone -b Stable https://github.com/HttpAnimation/FYC-Rewrite-V2.git && echo 'FYC has been installed' && cd FYC-Rewrite-V2
+    ```
+2) Install the server with wget or curl
+    #### wget
+    ```bash
+    wget "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever/InstallWget.sh" && chmod +x InstallWget.sh && ./InstallWget.sh
+    ```
+    #### curl
+    ```bash
+    curl "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever/InstallCurl.sh" && chmod +x InstallCurl.sh && ./InstallCurl.sh 
+    ```
