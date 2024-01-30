@@ -62,7 +62,6 @@ fetch('Configs/Replers/Versions.json')
         };
 
         repositories.forEach(repoURL => {
-            // Ensure proper handling of URLs
             const correctedRepoURL = repoURL.trim();
             fetchRepoData(correctedRepoURL);
         });
