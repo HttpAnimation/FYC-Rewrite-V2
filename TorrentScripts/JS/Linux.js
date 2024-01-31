@@ -1,4 +1,3 @@
-// Function to show an error message
 function showError(message) {
     const errorMessage = document.createElement('div');
     errorMessage.className = 'error-message';
