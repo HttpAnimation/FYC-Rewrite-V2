@@ -21,9 +21,6 @@ If you are using a different distro than Fedora, refer to [this download page](h
 https://nodejs.org/en/download
 ```
 
-### [Windows](https://www.microsoft.com/en-us/windows?r=1s)
-If you are using [Windows](https://www.microsoft.com/en-us/windows?r=1s), please note that no help will be provided on the server and it is not supported. It may not work at all. If you still want to install, go [here](https://nodejs.org/en/download).
-
 ## Installing
 #### This is only needed if you choose not it install this during the FYC install. 
 Open a terminal and enter the installation command for wget or curl. If you are on [Windows](https://www.microsoft.com/en-us/windows?r=1s), these commands will not work and you will need to install manually from this branch you can install [git](https://gitforwindows.org/) for [Windows](https://www.microsoft.com/en-us/windows?r=1s) with the git install command to get the scripts.
