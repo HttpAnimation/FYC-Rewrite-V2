@@ -13,7 +13,6 @@ function handleButtonClick(buttonName, link) {
     }
 }
 
-// Function to handle source button clicks
 function handleSourceButtonClick(sourceUrl) {
     console.log(`Source button clicked. Opening source URL: ${sourceUrl}`);
     window.open(sourceUrl, '_blank');
