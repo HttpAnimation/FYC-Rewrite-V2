@@ -2,7 +2,7 @@
 FYC is a repo system mainly for the web.
 
 ## README
-Github is showing the readme from main/README.md if you are seeing this while one that main branch head over the README.md file that branch for now while I try to find a fix I have no idea why this happends.
+GitHub is showing the readme from main/README.md if you are seeing this while one of the main branches heads over the README.md file branch for now while I try to find a fix I have no idea why this happens.
 
 ## Installing
 To install FYC open a terminal and type the following command listed below note that [Windows](https://www.microsoft.com/en-us/windows?r=1) is not tested.
@@ -14,7 +14,7 @@ wget https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/main/install
 Open the **index.html** in the FYC folder if you see nothing show up you may need to allow Crocs everywhere.
 
 ## Mods
-Mods are a way to add stuff to FYC even something happends with every repo in the world. To add a mod open the FYC-Rewrite V2 folder witch is most likly stored here **/home/$user/home** then open the Mods folder and drag and drop the folder of your mod into there then compile if you would like to make a mod read [this](https://github.com/HttpAnimation/FYC-Rewrite-V2/blob/Mod-Docs/README.md) page you can only compile mods with [macOS](https://www.apple.com/macos) and Linux [Windows](https://www.microsoft.com/en-us/windows) will not work [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) on [Windows](https://www.microsoft.com/en-us/windows) will work tho.
+Mods are a way to add stuff to FYC even if something happens with every repo in the world. To add a mod open the FYC-Rewrite V2 folder which is most likely stored here **/home/$user/home** then open the Mods folder and drag and drop the folder of your mod into there then compile if you would like to make a mod read [this](https://github.com/HttpAnimation/FYC-Rewrite-V2/blob/Mod-Docs/README.md) page you can only compile mods with [macOS](https://www.apple.com/macos) and Linux [Windows](https://www.microsoft.com/en-us/windows) will not work [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) on [Windows](https://www.microsoft.com/en-us/windows) will work tho.
 ```bash
 ./Compile.sh
 ```
@@ -24,7 +24,7 @@ chmod +x Compile.sh
 ```
 
 ## Adding a repo
-To add a repo open the FYC folder with the terminal and **cd** over to wherever it's downloaded the default will be **/home/$user/home** it might be different so keep that in mind but once they run one of the following command **[nano](https://www.nano-editor.org/)** is gonna be installed for almost every distro and [macOS](https://www.apple.com/macos) and **[kate](https://kate-editor.org/)** is gonna be included on most systems with [KDE Plasma](https://kde.org/plasma-desktop/) installed you can also open the file manually if you don't have one of the following IDEs installed.
+To add a repo open the FYC folder with the terminal and **cd** over to wherever it's downloaded the default will be **/home/$user/home** it might be different so keep that in mind but once they run one of the following commands **[nano](https://www.nano-editor.org/)** is going to be installed for almost every distro and [macOS](https://www.apple.com/macos) and **[kate](https://kate-editor.org/)** is going to be included on most systems with [KDE Plasma](https://kde.org/plasma-desktop/) installed you can also open the file manually if you don't have one of the following IDEs installed.
 
 ```
 kate Configs/Replers/Repo.json
@@ -55,11 +55,11 @@ Each method has its pros and cons.
 
 ### Streaming/Forking - Information
 
-Forking the repository is useful when you either cannot use a PC for running a lightweight server or cannot use Linux/macOS. However, keep in mind that everyone can see your site when you fork the repository, including GitHub. Ensure your site complies with [GitHub's TOS](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages) to avoid any issues if you are using a repo that is giving you stolen content remove it or use a local version.
+Forking the repository is useful when you cannot use a PC to run a lightweight server or use Linux/macOS. However, remember that everyone can see your site when you fork the repository, including GitHub. Ensure your site complies with [GitHub's TOS](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages) to avoid any issues if you are using a repo that is giving you stolen content remove it or use a local version.
 
 ### Streaming/Hosting - Information
 
-Hosting the FYC makes it way more secure and private what you are doing online all you need a unix pc or a server a recommand light wight server is [Fedora server](https://fedoraproject.org/server/) no one but on your network can see what you use the site for for eg. mods/repos.
+Hosting the FYC makes it way more secure and private what you are doing online all you need is a Unix PC or a server a recommended light wight server is [Fedora server](https://fedoraproject.org/server/) no one but on your network can see what you use the site for eg. mods/repos.
 
 ### Streaming/Forking - Running
 Follow these steps to run a live fork of FYC using GitHub:
