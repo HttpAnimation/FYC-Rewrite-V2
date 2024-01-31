@@ -58,7 +58,7 @@ Each method has its pros and cons.
 Forking the repository is useful when you cannot use a PC to run a lightweight server or use Linux/macOS. However, remember that everyone can see your site when you fork the repository, including GitHub. Ensure your site complies with [GitHub's TOS](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages) to avoid any issues if you are using a repo that is giving you stolen content remove it or use a local version.
 
 ### Streaming/Hosting - Information
-#### This is only needed if you choosed not to install the server during the install.
+#### This is only needed if you choose not to install the server during the installation.
 Hosting the FYC makes it way more secure and private what you are doing online all you need is a Unix PC or a server a recommended light wight server is [Fedora server](https://fedoraproject.org/server/) no one but on your network can see what you use the site for eg. mods/repos.
 
 ### Streaming/Forking - Running
