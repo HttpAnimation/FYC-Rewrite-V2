@@ -81,9 +81,7 @@ Follow these steps to run a live fork of FYC using GitHub:
 Follow these steps to run a live server of FYC:
 
 1) Install FYC
-    ```bash
-    git clone -b Stable https://github.com/HttpAnimation/FYC-Rewrite-V2.git && echo 'FYC has been installed' && cd FYC-Rewrite-V2
-    ```
+   This command can be found above.
 2) Install the server with wget or curl
     #### wget
     ```bash
