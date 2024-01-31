@@ -1,5 +1,5 @@
 # FYC
-FYC is a torrent hub for all things torrents 
+FYC is a torrent hub for all things torrents without sailing the seas.
 
 ## README
 GitHub is showing the readme from main/README.md if you are seeing this while one of the main branches heads over the README.md file branch for now while I try to find a fix I have no idea why this happens.
