@@ -73,6 +73,7 @@ fetch('../Configs/Replers/Movie-Repo.json')
     })
     .catch(error => {
         console.error('Error fetching repo list you might need cross-origin:', error);
-    });
+        console.log('Error response:', error.response);
+    });    
 
 console.log('Movies.js | Loaded');
