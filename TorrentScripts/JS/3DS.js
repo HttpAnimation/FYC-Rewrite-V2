@@ -18,7 +18,6 @@ function handleSourceButtonClick(sourceUrl) {
     window.open(sourceUrl, '_blank');
 }
 
-// Fetch and process JSON data from multiple repositories
 fetch('../Configs/Replers/3DS-Repo.json')
     .then(response => response.json())
     .then(data => {
