@@ -62,13 +62,13 @@ fetch('../Configs/Replers/3DS-Repo.json')
         };
 
         repositories.forEach(repoURL => {
-            // Ensure proper handling of URLs
             const correctedRepoURL = repoURL.trim();
             fetchRepoData(correctedRepoURL);
         });
     })
     .catch(error => {
         console.error('Error fetching repo list you might need cross-origin:', error);
+        console.log('Error response:', error.response);
     });
 
 console.log('3DS.js | Loaded');
