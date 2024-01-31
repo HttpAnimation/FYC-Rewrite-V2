@@ -18,7 +18,6 @@ function handleSourceButtonClick(sourceUrl) {
     window.open(sourceUrl, '_blank');
 }
 
-// Fetch and process JSON data from multiple repositories
 fetch('../Configs/Replers/Linux-Repo.json')
     .then(response => response.json())
     .then(data => {
@@ -63,7 +62,6 @@ fetch('../Configs/Replers/Linux-Repo.json')
         };
 
         repositories.forEach(repoURL => {
-            // Ensure proper handling of URLs
             const correctedRepoURL = repoURL.trim();
             fetchRepoData(correctedRepoURL);
         });
