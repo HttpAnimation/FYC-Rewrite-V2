@@ -1,6 +1,6 @@
 # FYC/NodeJSServer
 
-This branch is for an NPM server for [macOS](https://www.apple.com/macos) and [Linux](https://github.com/torvalds/linux).
+This branch is for an NPM server for [macOS](https://www.apple.com/macos) and [Linux](https://github.com/torvalds/linux) while [Windows](https://www.microsoft.com/en-us/windows) might work it's not tested.
 
 
 ## Node.js
