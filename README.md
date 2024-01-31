@@ -23,7 +23,7 @@ https://nodejs.org/en/download
 
 ## Installing
 #### This is only needed if you choose not it install this during the FYC install. 
-Open a terminal and enter the installation command for wget or curl. If you are on [Windows](https://www.microsoft.com/en-us/windows?r=1s), these commands will not work and you will need to install manually from this branch you can install [git](https://gitforwindows.org/) for [Windows](https://www.microsoft.com/en-us/windows?r=1s) with the git install command to get the scripts.
+Open a terminal and enter the installation command for wget or curl. If you are on [Windows](https://www.microsoft.com/en-us/windows?r=1s), these commands will not work and you will need to install manually from this branch you can install [git](https://gitforwindows.org/) for [Windows](https://www.microsoft.com/en-us/windows?r=1s) with the git install command to get the scripts you can also install [Git for Windows](https://gitforwindows.org/) and [this]() command in the cmd.
 
 ### Wget
 ```bash
