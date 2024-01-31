@@ -5,7 +5,6 @@ function showError(message) {
     document.body.insertBefore(errorMessage, document.getElementById('sidebar'));
 }
 
-// Function to handle button clicks
 function handleButtonClick(buttonName, link) {
     console.log(`Button clicked: ${buttonName}`);
     if (link) {
