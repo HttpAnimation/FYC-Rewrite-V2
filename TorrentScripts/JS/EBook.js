@@ -5,7 +5,6 @@ function showError(message) {
     document.body.insertBefore(errorMessage, document.getElementById('sidebar'));
 }
 
-// Function to handle button clicks
 function handleButtonClick(buttonName, link) {
     console.log(`Button clicked: ${buttonName}`);
     if (link) {
@@ -14,13 +13,11 @@ function handleButtonClick(buttonName, link) {
     }
 }
 
-// Function to handle source button clicks
 function handleSourceButtonClick(sourceUrl) {
     console.log(`Source button clicked. Opening source URL: ${sourceUrl}`);
     window.open(sourceUrl, '_blank');
 }
 
-// Fetch and process JSON data from multiple repositories
 fetch('../Configs/Replers/EBook-Repo.json')
     .then(response => response.json())
     .then(data => {
@@ -65,7 +62,6 @@ fetch('../Configs/Replers/EBook-Repo.json')
         };
 
         repositories.forEach(repoURL => {
-            // Ensure proper handling of URLs
             const correctedRepoURL = repoURL.trim();
             fetchRepoData(correctedRepoURL);
         });
