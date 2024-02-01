@@ -5,7 +5,6 @@ rm README.md
 rm -r Templates
 rm Configs/Replers/README.md
 rm Mods/README.md
-rm TorrentScripts/JS/README.md
 
 echo "Would you like to install the node.js server npm will need to be installed for this? (yes/no)"
 read answer
@@ -18,3 +17,4 @@ else
   echo "Invalid input. Please enter 'yes' or 'no'."
   rm install.sh
 fi
+rm install.sh
