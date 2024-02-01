@@ -6,15 +6,15 @@ rm -r Templates
 rm Configs/Replers/README.md
 rm Mods/README.md
 
-echo "Would you like to install the node.js server npm will need to be installed for this? (yes/no)"
+echo "Would you like to install the node.js server npm will need to be installed for this? (y/n)"
 read answer
 
-if [ "$answer" = "yes" ]; then
+if [ "$answer" = "y" ]; then
     wget "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever/InstallWget.sh" && chmod +x InstallWget.sh && ./InstallWget.sh
-elif [ "$answer" = "no" ]; then
+elif [ "$answer" = "n" ]; then
     echo "Ok exiting"
 else
-  echo "Invalid input. Please enter 'yes' or 'no'."
+  echo "Invalid input. Please enter 'y' or 'm'."
   rm install.sh
 fi
 rm install.sh
