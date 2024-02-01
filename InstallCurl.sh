@@ -1,5 +1,5 @@
 #!/bin/bash
-
+ 
 echo "Are you in the root FYC directory? (y/n)"
 echo "If you are not sure, type (n) and cd into where the main files are (Not in a sub-dir)."
 read answer
