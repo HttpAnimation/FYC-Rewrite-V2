@@ -1,4 +1,4 @@
-# FYC-Rewrite V2
+# FYC-Rewrite-V2/Repo-Docs
 This page is documentation for the repo system that FYC uses.
 
 ## Prerequisites
