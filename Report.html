@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FYC</title>
+  <link rel="stylesheet" href="Scripts/CSS/Report.css">
+</head>
+<body>
+  <div class="content">
+        <form id="requestForm">
+      <div class="input-container">
+        <label for="torrentname">Enter the name of the requested torrent:</label>
+        <input type="text" id="torrentname" name="torrentname" required>
+      </div>
+      <div class="input-container">
+        <label for="requester">Your Discord user Name:</label>
+        <input type="text" id="requester" name="requester" required>
+      </div>
+      <div class="input-container">
+        <label for="description">Describe the request:</label>
+        <textarea id="description" name="description" rows="4" placeholder="Please describe the request..." required></textarea>
+      </div>
+      <button type="submit">Submit</button>
+        </form>
+    <a href="index.html" class="back-button">Go home</a>
+  </div>
+  <script src="Scripts/JS/Report.js"></script>
+  </body>
+</html>
