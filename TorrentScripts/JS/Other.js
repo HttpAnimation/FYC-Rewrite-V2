@@ -38,11 +38,11 @@ fetch('../Configs/Replers/Other.json')
                         movieElement.innerHTML = `
                             <h1>${movie['Name']}</h1>
                             <img src="${movie['Icon']}" alt="Movie Icon">
+                            <button class="movie-button" onclick="handleSourceButtonClick('${movie['Source']}')">Source</button>
                             <a href="${movie['.Torrent']}" target="_blank" class="movie-button">Download Torrent</a>
                             <a href="${movie['MagnetUrl']}" class="movie-button">Magnet Link</a>
-                            <button class="source-button" onclick="handleSourceButtonClick('${movie['Source']}')">Source</button>
                         `;
-                        if (movie['HasStreamURL'] === true) {
+                        if (movie['StreamURL']) {
                             const streamButton = document.createElement('a');
                             streamButton.href = movie['StreamURL'];
                             streamButton.classList.add('movie-button');
