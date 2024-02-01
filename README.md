@@ -1,4 +1,5 @@
-# FYC
+# FYC-Rewrite-V2/main
+
 FYC is a torrent hub for all things torrents without sailing the seas.
 
 ## README
@@ -39,7 +40,7 @@ Once you have the file opened add a **,** at the end of your last repo URL for a
 Add a new line under the **,** and add **""** to that line and you should get something like this.
 ```
 ........com/repo.json",
-"Gffg://100%ARealURL.json"
+"https://100%ARealURL.json"
 ```
 If you add another repo make sure to add the **,** again it just tells [JSON](https://www.json.org/json-en.html) that there is a new repo am planning on making a GUI for managing repos without no code editing but for now this is the way.
 
