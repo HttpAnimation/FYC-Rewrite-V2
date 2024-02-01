@@ -157,4 +157,3 @@ Your repository should now look like this:
     }
 }
 ```
-If everything looks good, you can now proceed to add your repository to FYC.
