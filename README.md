@@ -119,7 +119,7 @@ This section will guide you on how to add a torrent to your repository.
 8. To add another torrent, follow the format:
 
     ```json
-    },
+    ,
     "Torrent name": {
         "Name": "Torrent name",
         ".Torrent": ".torrent",
