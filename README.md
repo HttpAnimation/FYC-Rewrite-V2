@@ -3,7 +3,7 @@ This page is documentation for the repo system that FYC uses.
 
 ## Prerequisites
 1) IDE | A good one is [VSC](https://code.visualstudio.com/).
-2) Basic sense.
+2) Basic json exp.
 
 ## Starting
 First, make your repo folder to do this run the command listed below and make sure to replace the repo name with your repo's name.
