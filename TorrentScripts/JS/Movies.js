@@ -42,7 +42,7 @@ fetch('../Configs/Replers/Movie-Repo.json')
                             <a href="${movie['.Torrent']}" target="_blank" class="movie-button">Download Torrent</a>
                             <a href="${movie['MagnetUrl']}" class="movie-button">Magnet Link</a>
                         `;
-                        if (movie['HasStreamURL'] === true) {
+                        if (movie['StreamURL']) {
                             const streamButton = document.createElement('a');
                             streamButton.href = movie['StreamURL'];
                             streamButton.classList.add('movie-button');
