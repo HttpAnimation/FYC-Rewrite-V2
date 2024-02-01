@@ -15,6 +15,8 @@ elif [ "$answer" = "n" ]; then
     echo "Ok exiting"
 else
   echo "Invalid input. Please enter 'y' or 'm'."
+  cd ../
   rm install.sh
 fi
+cd ../
 rm install.sh
