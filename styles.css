@@ -46,7 +46,11 @@ img {
     text-decoration: none;
     border: none;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
 }
+
+.movie-button:hover {
+    transform: scale(1.1);
 
 .error-message {
     background-color: #ff6347;
@@ -58,15 +62,4 @@ img {
 #content {
     margin-left: 270px; 
     padding: 20px;
-}
-
-.movie-button {
-    display: block;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #555555;
-    color: #ffffff; 
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
 }
