@@ -18,3 +18,4 @@ else
   rm install.sh
 fi
 rm install.sh
+github
