@@ -43,8 +43,8 @@ fetch('../Configs/Replers/Other.json')
                         movieElement.innerHTML = `
                             <h1>${movie['Name']}</h1>
                             <img src="${movie['Icon']}" alt="Movie Icon">
-                            <button class="movie-button" onclick="handleSourceButtonClick('${movie['Source']}')">Source</button>
                             <button class="movie-button" onclick="showDescription('${movie['Description']}')">Description</button>
+                            <button class="movie-button" onclick="handleSourceButtonClick('${movie['Source']}')">Source</button>
                             <a href="${movie['.Torrent']}" target="_blank" class="movie-button">Download Torrent</a>
                             <a href="${movie['MagnetUrl']}" class="movie-button">Magnet Link</a>
                         `;
