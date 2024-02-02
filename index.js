@@ -17,7 +17,7 @@ app.use(cors({
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
-  res.send('Hello, this is proxy server!');
+  res.send('Hello, :3!');
 });
 
 app.get('*', (req, res) => {
