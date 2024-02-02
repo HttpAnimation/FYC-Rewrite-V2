@@ -1,0 +1,35 @@
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+.mod-info {
+    margin-bottom: 20px;
+}
+.mod-name {
+    font-size: 1.2em;
+}
+.mod-description {
+    font-style: italic;
+}
+.download-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 0px 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.download-button:hover {
+    background-color: #0056b3;
+}
+.home-button {
+    display: block;
+    margin: 20px 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.home-button:hover {
+    text-decoration: underline;
+}
