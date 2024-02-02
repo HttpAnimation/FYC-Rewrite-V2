@@ -1,7 +1,6 @@
 @echo off
 setlocal enabledelayedexpansion
 
-echo This script is not tested so there may be bugs.
 git clone -b Stable https://github.com/httpanimation/FYC-Rewrite-V2.git
 cd FYC-Rewrite-V2
 del README.md
@@ -13,9 +12,8 @@ echo Would you like to install the node.js server npm will need to be installed 
 set /p answer=
 
 if /i "%answer%"=="y" (
-    bitsadmin /transfer "Downloading" "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever/InstallWget.sh" "%cd%\InstallWget.sh"
-    chmod +x InstallWget.sh
-    ./InstallWget.sh
+    bitsadmin /transfer "Downloading" "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever/InstallWin.bat" "%cd%\InstallWin.bat"
+    call InstallWin.bat
 ) else if /i "%answer%"=="n" (
     echo Ok exiting
 ) else (
@@ -27,4 +25,5 @@ if /i "%answer%"=="y" (
 
 cd ..
 del install.sh
+
 endlocal
