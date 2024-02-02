@@ -7,10 +7,10 @@
 ![Open-source](image.png)
 
 3) #### Mods
-![Mods]()
+![Mods](mods.png)
 
 4) #### Download torrents with out breaking copy right law.
-![Download]()
+![Download](download4.png)
 
 4) #### Simple Node.js server / Github
 ![Server]()
