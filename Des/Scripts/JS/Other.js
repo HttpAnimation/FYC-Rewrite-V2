@@ -13,6 +13,11 @@ function handleButtonClick(buttonName, link) {
     }
 }
 
+function showDescription(description) {
+    const descriptionPopup = window.open('', '_blank', 'width=400,height=300');
+    descriptionPopup.document.write(`<html><head><title>Description</title></head><body><p>${description}</p></body></html>`);
+}
+
 function handleSourceButtonClick(sourceUrl) {
     console.log(`Source button clicked. Opening source URL: ${sourceUrl}`);
     window.open(sourceUrl, '_blank');
@@ -28,9 +33,9 @@ fetch('../Configs/Replers/Other.json')
             try {
                 const response = await fetch(repoURL);
                 const repoData = await response.json();
-        
+
                 const movies = repoData['Movies'] || repoData[0]['Movies'];
-        
+
                 if (movies) {
                     Object.keys(movies).forEach(key => {
                         const movie = movies[key];
@@ -39,6 +44,7 @@ fetch('../Configs/Replers/Other.json')
                             <h1>${movie['Name']}</h1>
                             <img src="${movie['Icon']}" alt="Movie Icon">
                             <button class="movie-button" onclick="handleSourceButtonClick('${movie['Source']}')">Source</button>
+                            <button class="movie-button" onclick="showDescription('${movie['Description']}')">Description</button>
                             <a href="${movie['.Torrent']}" target="_blank" class="movie-button">Download Torrent</a>
                             <a href="${movie['MagnetUrl']}" class="movie-button">Magnet Link</a>
                         `;
