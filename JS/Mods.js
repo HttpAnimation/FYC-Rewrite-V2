@@ -1,4 +1,4 @@
-fetch('https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/main/Adding%20a%20repo.md')
+fetch('https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/main/Mods.md')
 .then(response => response.text())
 .then(data => {
   document.querySelector('md-block').innerHTML = data;
