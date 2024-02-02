@@ -1,12 +1,4 @@
 #!/bin/bash
- 
-echo "Are you in the root FYC directory? (y/n)"
-echo "If you are not sure, type (n) and cd into where the main files are (Not in a sub-dir)."
-read answer
-
-if [ "$answer" = "y" ] || [ "$answer" = "yes" ]; then
-  echo "Continuing the script..."
-  echo "Downloading required files..."
   urls=("https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever/NewWonnix.sh"
         "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever/Run.sh"
         "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever/package-lock.json" 
