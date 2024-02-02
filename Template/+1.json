@@ -1,10 +1,10 @@
 ,
-        "Torrent name": {
-            "Name": "Torrent name",
-            ".Torrent": ".torrent",
-            "MagnetUrl": "magnet",
-            "Icon": "photo.png",
+        "Name": {
+            "Name": "Name",
+            ".Torrent": "Torrent",
+            "MagnetUrl": "Magnet",
+            "Icon": "Photo",
             "Source": "WhereItComesFrom",
             "HasStreamURL": false,
-            "StreamURL": "stream.mp4"
+            "StreamURL": "URL"
         }
