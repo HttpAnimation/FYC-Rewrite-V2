@@ -1,7 +1,7 @@
 # Features
 
 1) #### Repo system
-![Repo]()
+![Repo](photo.png)
 
 2) #### Open-source
 ![Open-source]()
