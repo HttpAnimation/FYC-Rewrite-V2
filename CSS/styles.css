@@ -1,5 +1,5 @@
 body {
-    background-color: #121212;
+    background-color: #121212; 
     color: #ffffff; 
     font-family: Arial, sans-serif;
     margin: 0;
@@ -11,8 +11,13 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #333333; 
+    background-color: #333333;
     padding-top: 20px;
+    overflow-y: auto; 
+}
+
+#sidebar-container {
+    height: calc(100% - 20px);
 }
 
 #content {
@@ -30,17 +35,24 @@ body {
 img {
     max-width: 100%;
     height: auto;
+    width: 1024;
+    height: 614;
 }
 
 .movie-button {
     display: block;
     margin-top: 10px;
     padding: 10px;
-    background-color: #555555; 
-    color: #ffffff; 
+    background-color: #555555;
+    color: #ffffff;
     text-decoration: none;
     border: none;
     cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.movie-button:hover {
+    transform: scale(1.1);
 }
 
 .error-message {
@@ -51,17 +63,6 @@ img {
 }
 
 #content {
-    margin-left: 270px;
+    margin-left: 270px; 
     padding: 20px;
-}
-
-.movie-button {
-    display: block;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #555555; 
-    color: #ffffff;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
 }
