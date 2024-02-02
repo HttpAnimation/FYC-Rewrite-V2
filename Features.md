@@ -12,5 +12,5 @@
 4) #### Download torrents with out breaking copy right law.
 ![Download](download4.png)
 
-4) #### Simple Node.js server / Github
+4) #### Node.js server / Github
 ![Server]()
