@@ -1,0 +1,17 @@
+[
+    {
+        "Repo-Name": "NAMEHERE",
+        "Movies": {
+            "Torrent name": {
+                "Name": "Torrent name",
+                ".Torrent": ".torrent",
+                "MagnetUrl": "manget",
+                "Icon": "photo.png",
+                "Source": "PlaceWhereTheFileCameFrom",
+                "HasStreamURL": false,
+                "StreamURL": "stream.mp4",
+                "Description": "Test UwU :3"
+            }
+        }
+    }
+]
