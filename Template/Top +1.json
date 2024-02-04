@@ -1,0 +1,10 @@
+
+    "Name": {
+        "Name": "Name",
+        ".Torrent": "Torrent",
+        "MagnetUrl": "Magnet",
+        "Icon": "Photo",
+        "Source": "WhereItComesFrom",
+        "HasStreamURL": false,
+        "StreamURL": "URL"
+    },
