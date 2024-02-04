@@ -9,14 +9,7 @@ rm Mods/README.md
 echo "Would you like to install the node.js server npm will need to be installed for this? (y/n)"
 read answer
 
-if [ "$answer" = "y" ]; then
-    wget "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever/InstallWget.sh" && chmod +x InstallWget.sh && ./InstallWget.sh
-elif [ "$answer" = "n" ]; then
-    echo "Ok exiting"
-else
-  echo "Invalid input. Please enter 'y' or 'm'."
-  cd ../
-  rm install.sh
-fi
+wget "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever/InstallWget.sh" && chmod +x InstallWget.sh && ./InstallWget.sh
+
 cd ../
 rm install.sh
