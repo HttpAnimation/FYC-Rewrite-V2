@@ -72,4 +72,4 @@ fetch('../Configs/Replers/Other.json')
         console.error('Error fetching repo list you might need cross-origin:', error);
     });
 
-console.log('MacOS.js | Loaded');
+console.log('Other.js | Loaded');
