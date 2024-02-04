@@ -3,6 +3,7 @@
             "Name": "Name",
             ".Torrent": "Torrent",
             "MagnetUrl": "Magnet",
+            "Description": "Description",
             "Icon": "Photo",
             "Source": "WhereItComesFrom",
             "HasStreamURL": false,

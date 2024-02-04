@@ -6,6 +6,7 @@
                 "Name": "Torrent name",
                 ".Torrent": ".torrent",
                 "MagnetUrl": "manget",
+                "Description": "Description",
                 "Icon": "photo.png",
                 "Source": "PlaceWhereTheFileCameFrom",
                 "HasStreamURL": false,
