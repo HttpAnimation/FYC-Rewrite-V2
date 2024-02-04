@@ -6,9 +6,12 @@
                 "Name": "Torrent name",
                 ".Torrent": ".torrent",
                 "MagnetUrl": "manget",
+                "Description": "Test UwU :3",
                 "Icon": "photo.png",
+                "Source": "PlaceWhereTheFileCameFrom",
+                "SeedersAtTime": "621",
                 "HasStreamURL": false,
-                "StreamURL": "stream.mp4"
+                "StreamURL": "stream.mp4"                
             }
         }
     }
