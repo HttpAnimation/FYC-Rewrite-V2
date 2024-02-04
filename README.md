@@ -37,8 +37,10 @@ This document provides documentation for the repository system used by FYC.
                 "Torrent name": {
                     "Name": "Torrent name",
                     ".Torrent": ".torrent",
-                    "MagnetUrl": "magnet",
+                    "MagnetUrl": "manget",
+                    "Description": "Description",
                     "Icon": "photo.png",
+                    "Source": "PlaceWhereTheFileCameFrom",
                     "HasStreamURL": false,
                     "StreamURL": "stream.mp4"
                 }
@@ -90,6 +92,15 @@ This section will guide you on how to add a torrent to your repository.
     "MagnetUrl": "magnet:?xt=urn:btih:Q7MIUYJHI26QJIRGISQIO6QFIBDA572P&dn=silent-santa-claus&tr=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce",
     ```
 
+### Description
+
+5. Add the description some punction will not work so keep that in mind.
+    
+    ```json
+    "Description": "He can't talk idk",
+    ```
+
+
 ### Icon
 
 5. Add an icon, which is the photo displayed on the FYC website. Host it yourself or use a free photo upload site:
@@ -124,6 +135,7 @@ This section will guide you on how to add a torrent to your repository.
         "Name": "Torrent name",
         ".Torrent": ".torrent",
         "MagnetUrl": "magnet",
+        "Description": "Description",
         "Icon": "photo.png",
         "HasStreamURL": false,
         "StreamURL": "stream.mp4"
@@ -142,6 +154,7 @@ Your repository should now look like this:
             "Name": "Silent Santa Claus 1925",
             ".Torrent": "https://archive.org/download/silent-santa-claus/silent-santa-claus_archive.torrent",
             "MagnetUrl": "magnet:?xt=urn:btih:Q7MIUYJHI26QJIRGISQIO6QFIBDA572P&dn=silent-santa-claus&tr=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce",
+            "Description": "I don't think he can talk",
             "Icon": "icon.jpg",
             "HasStreamURL": true,
             "StreamURL": "https://ia801700.us.archive.org/0/items/silent-santa-claus/Santa%20Claus.mp4"
@@ -150,6 +163,7 @@ Your repository should now look like this:
             "Name": "Torrent name",
             ".Torrent": ".torrent",
             "MagnetUrl": "magnet",
+            "Description": "Description",
             "Icon": "photo.png",
             "HasStreamURL": false,
             "StreamURL": "stream.mp4"
