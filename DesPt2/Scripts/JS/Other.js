@@ -39,7 +39,7 @@ fetch('../Configs/Replers/Other.json')
                             <h1>${movie['Name']}</h1>
                             <img src="${movie['Icon']}" alt="Movie Icon">
                             <button class="movie-button" onclick="handleSourceButtonClick('${movie['Source']}')">Source</button>
-                            <h6><pre><code>${movie['']}</code</pre</h6>
+                            <h6><pre><code>${movie['Description']}</code</pre</h6>
                             <a href="${movie['.Torrent']}" target="_blank" class="movie-button">Download Torrent</a>
                             <a href="${movie['MagnetUrl']}" class="movie-button">Magnet Link</a>
                         `;
