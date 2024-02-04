@@ -94,12 +94,19 @@ This section will guide you on how to add a torrent to your repository.
 
 ### Description
 
-5. Add the description some punction will not work so keep that in mind.
+5. This is the description some punction will not work so keep that in mind.
     
     ```json
     "Description": "He can't talk idk",
     ```
 
+### SeedersAtTime
+
+6. This is how many seeders the torrents has as time of making the repo entry
+
+    ```json
+    "SeedersAtTime": "621",
+    ```
 
 ### Icon
 
@@ -137,6 +144,7 @@ This section will guide you on how to add a torrent to your repository.
         "MagnetUrl": "magnet",
         "Description": "Description",
         "Icon": "photo.png",
+        "SeedersAtTime": "621",
         "HasStreamURL": false,
         "StreamURL": "stream.mp4"
     }
@@ -156,6 +164,7 @@ Your repository should now look like this:
             "MagnetUrl": "magnet:?xt=urn:btih:Q7MIUYJHI26QJIRGISQIO6QFIBDA572P&dn=silent-santa-claus&tr=http%3A%2F%2Fbt1.archive.org%3A6969%2Fannounce",
             "Description": "I don't think he can talk",
             "Icon": "icon.jpg",
+            "SeedersAtTime": "621",
             "HasStreamURL": true,
             "StreamURL": "https://ia801700.us.archive.org/0/items/silent-santa-claus/Santa%20Claus.mp4"
         },
@@ -165,6 +174,7 @@ Your repository should now look like this:
             "MagnetUrl": "magnet",
             "Description": "Description",
             "Icon": "photo.png",
+            "SeedersAtTime": "621",
             "HasStreamURL": false,
             "StreamURL": "stream.mp4"
         }
