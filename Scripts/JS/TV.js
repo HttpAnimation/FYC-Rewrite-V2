@@ -29,7 +29,7 @@ function handleSourceButtonClick(sourceUrl) {
     window.open(sourceUrl, '_blank');
 }
 
-fetch('../Configs/Replers/macOS-Repo.json')
+fetch('../Configs/Replers/TV-Repo.json')
     .then(response => response.json())
     .then(data => {
         const repositories = data[0]['Repositories'];
@@ -86,4 +86,4 @@ fetch('../Configs/Replers/macOS-Repo.json')
         console.log('Error response:', error.response);
     });
 
-console.log('macOS.js | Loaded');
+console.log('TV.js | Loaded');
