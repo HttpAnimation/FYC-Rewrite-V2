@@ -110,7 +110,7 @@ This section will guide you on how to add a torrent to your repository.
 
 ### Icon
 
-5. Add an icon, which is the photo displayed on the FYC website. Host it yourself or use a free photo upload site:
+7. Add an icon, which is the photo displayed on the FYC website. Host it yourself or use a free photo upload site:
 
     ```json
     "Icon": "icon.jpg",
@@ -118,7 +118,7 @@ This section will guide you on how to add a torrent to your repository.
 
 ### Streaming
 
-6. For streaming, set "HasStreamURL" to `true` if you have a raw video link, otherwise keep it `false`:
+8. For streaming, set "HasStreamURL" to `true` if you have a raw video link, otherwise keep it `false`:
 
     ```json
     "HasStreamURL": true,
@@ -126,7 +126,7 @@ This section will guide you on how to add a torrent to your repository.
 
 ### Streaming URL
 
-7. If you have a stream URL, set it:
+9. If you have a stream URL, set it:
 
     ```json
     "StreamURL": "https://ia801700.us.archive.org/0/items/silent-santa-claus/Santa%20Claus.mp4"
@@ -134,7 +134,7 @@ This section will guide you on how to add a torrent to your repository.
 
 ### Adding More Torrents
 
-8. To add another torrent, follow the format:
+10. To add another torrent, follow the format:
 
     ```json
     ,
