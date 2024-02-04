@@ -9,6 +9,7 @@
                 "Description": "Description",
                 "Icon": "photo.png",
                 "Source": "PlaceWhereTheFileCameFrom",
+                "SeedersAtTime": "621",
                 "HasStreamURL": false,
                 "StreamURL": "stream.mp4"
             }

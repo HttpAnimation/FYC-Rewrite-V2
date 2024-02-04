@@ -6,6 +6,7 @@
         "Description": "Description",
         "Icon": "Photo",
         "Source": "WhereItComesFrom",
+        "SeedersAtTime": "621",
         "HasStreamURL": false,
         "StreamURL": "URL"
     },

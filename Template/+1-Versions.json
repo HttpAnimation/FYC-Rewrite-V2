@@ -6,6 +6,7 @@
             "Description": "Local versions form github",
             "Icon": "https://github.com/HttpAnimation/FYC-Rewrite-V2/blob/main/PFP_1704426442876.png?raw=true",
             "Source": "https://github.com/HttpAnimation/FYC-Rewrite-V2",
+            "SeedersAtTime": "Github",
             "HasStreamURL": false,
             "StreamURL": "URL"
         },
