@@ -19,6 +19,7 @@ function handleSourceButtonClick(sourceUrl) {
 }
 
 fetch('../Configs/Replers/Linux-Repo.json')
+    .then(response => response.json())
     .then(data => {
         const repositories = data[0]['Repositories'];
         const contentElement = document.getElementById('content');
@@ -38,11 +39,9 @@ fetch('../Configs/Replers/Linux-Repo.json')
                             <h1>${movie['Name']}</h1>
                             <img src="${movie['Icon']}" alt="Movie Icon">
                             <button class="movie-button" onclick="handleSourceButtonClick('${movie['Source']}')">Source</button>
-                            <h4>${movie['SeedersAtTime']}</h4>
-                            <h6>${movie['Description']}</h6>
                             <a href="${movie['.Torrent']}" target="_blank" class="movie-button">Download Torrent</a>
                             <a href="${movie['MagnetUrl']}" class="movie-button">Magnet Link</a>
-                            `;
+                        `;
                         if (movie['StreamURL']) {
                             const streamButton = document.createElement('a');
                             streamButton.href = movie['StreamURL'];
