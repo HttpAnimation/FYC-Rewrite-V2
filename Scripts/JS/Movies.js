@@ -29,7 +29,7 @@ function handleSourceButtonClick(sourceUrl) {
     window.open(sourceUrl, '_blank');
 }
 
-fetch('../Configs/Replers/Movies-Repo.json')
+fetch('../Configs/Replers/Movie-Repo.json')
     .then(response => response.json())
     .then(data => {
         const repositories = data[0]['Repositories'];
