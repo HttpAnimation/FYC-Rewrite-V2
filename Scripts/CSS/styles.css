@@ -52,7 +52,7 @@ a:hover {
 
 .error-message {
     background-color: #ff6347; 
-    color: #ffffff; /* White text */
+    color: #ffffff; 
     padding: 10px;
     margin-bottom: 10px;
 }
