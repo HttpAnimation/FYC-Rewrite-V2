@@ -11,13 +11,9 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #333333;
+    background-color: #282828; /* Dark grey background */
     padding-top: 20px;
     overflow-y: auto; 
-}
-
-#sidebar-container {
-    height: calc(100% - 20px);
 }
 
 #content {
@@ -25,25 +21,11 @@ body {
     padding: 20px;
 }
 
-#darkModeIcon {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    width: 1024;
-    height: 614;
-}
-
 .movie-button {
     display: block;
     margin-top: 10px;
     padding: 10px;
-    background-color: #555555;
+    background-color: #333; /* Dark grey background */
     color: #ffffff;
     text-decoration: none;
     border: none;
@@ -52,17 +34,26 @@ img {
 }
 
 .movie-button:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
+h3 {
+    color: #eeeeee; /* Light grey text */
+}
+
+a {
+    color: #ffffff; /* White text */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Update the look of the error message */
 .error-message {
-    background-color: #ff6347;
-    color: #ffffff;
+    background-color: #ff6347; /* Red */
+    color: #ffffff; /* White text */
     padding: 10px;
     margin-bottom: 10px;
-}
-
-#content {
-    margin-left: 270px; 
-    padding: 20px;
 }
