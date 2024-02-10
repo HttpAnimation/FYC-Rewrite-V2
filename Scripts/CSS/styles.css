@@ -50,7 +50,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Update the look of the error message */
 .error-message {
     background-color: #ff6347; /* Red */
     color: #ffffff; /* White text */
