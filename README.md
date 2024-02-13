@@ -7,7 +7,7 @@ This branch is for an NPM server for [macOS](https://www.apple.com/macos) and [L
 Node.js is the runner used to run the server.
 
 ## Read
-This is now built into the installer for FYC. And yes I know that **Sever** is spelled worng I ment
+This is now built into the installer for FYC. And yes I know that **Sever** is spelled worng I ment to
 ### [Fedora](https://fedoraproject.org/)
 
 ```bash
