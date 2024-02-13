@@ -8,7 +8,7 @@ git clone -b NodeJSSever https://github.com/HttpAnimation/FYC-Rewrite-V2.git
 mv FYC-Rewrite-V2 NodeJSSever
 git clone -b Repo https://github.com/HttpAnimation/FYC-Rewrite-V2.git
 mv FYC-Rewrite-V2 Repo
-git clone -b Repo-Docs https://github.com/HttpAnimation/FYC-Rewrite-V2.git
+git clone -b Repo-docs https://github.com/HttpAnimation/FYC-Rewrite-V2.git
 mv FYC-Rewrite-V2 Repo-Docs
 git clone -b Stable https://github.com/HttpAnimation/FYC-Rewrite-V2.git
 mv FYC-Rewrite-V2 Stable
