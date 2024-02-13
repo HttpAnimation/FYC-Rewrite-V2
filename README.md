@@ -7,7 +7,7 @@ This branch is for an NPM server for [macOS](https://www.apple.com/macos) and [L
 Node.js is the runner used to run the server.
 
 ## Read
-This is now built into
+This is now built into the
 
 ### [Fedora](https://fedoraproject.org/)
 
