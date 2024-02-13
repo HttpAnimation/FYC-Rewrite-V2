@@ -1,8 +1,8 @@
 
         "Name": {
             "Name": "Name",
-            ".Torrent": "Tar",
-            "MagnetUrl": "Zip",
+            ".Torrent": "https://github.com/HttpAnimation/FYC-Rewrite-V2/archive/refs/tags/NAME.tar.gz",
+            "MagnetUrl": "https://github.com/HttpAnimation/FYC-Rewrite-V2/archive/refs/tags/NAME.zip",
             "Description": "Local versions form github",
             "Icon": "https://github.com/HttpAnimation/FYC-Rewrite-V2/blob/main/PFP_1704426442876.png?raw=true",
             "Source": "https://github.com/HttpAnimation/FYC-Rewrite-V2",
