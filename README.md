@@ -34,7 +34,7 @@ wget "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever
 ```
 
 ### Curl
-The Curl installer has been removed as it will be a option in the installer.
+The Curl installer has been removed as it will be a option in the installer for wget.
 
 #### Git
 ```bash
