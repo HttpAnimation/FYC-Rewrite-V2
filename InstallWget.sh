@@ -6,10 +6,18 @@ urls=("https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSeve
         "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever/package.json" 
         "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever/index.js")
 
-for url in "${urls[@]}"
-do
-    wget $url
-done
+# Check if -c flag is provided
+if [ "$1" = "-c" ]; then
+    for url in "${urls[@]}"
+    do
+        curl -O $url
+    done
+else
+    for url in "${urls[@]}"
+    do
+        wget $url
+    done
+fi
 
 echo "Done downloading required files."
 
