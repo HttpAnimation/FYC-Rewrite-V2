@@ -1,5 +1,6 @@
 #!/bin/bash
   echo "DO NOT USE THIS FILE"
+  echo "system lock hit ctrl+c"
   sleep 99999
   urls=("https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever/NewWonnix.sh"
         "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever/Run.sh"
