@@ -34,7 +34,7 @@ wget "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever
 ```
 
 ### Curl
-The Curl installer has been
+The Curl installer has been removed
 
 #### Git
 ```bash
