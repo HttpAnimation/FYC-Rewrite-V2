@@ -33,6 +33,8 @@ Open a terminal and enter the installation command for wget or curl. If you are 
 wget "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever/InstallWget.sh" && chmod +x InstallWget.sh && ./InstallWget.sh
 ```
 
+### Curl
+
 #### Git
 ```bash
 git clone -b NodeJSSever https://github.com/HttpAnimation/FYC-Rewrite-V2.git
