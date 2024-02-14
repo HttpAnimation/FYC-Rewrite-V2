@@ -18,12 +18,7 @@ mkdir public
 echo "Done creating public folder."
 
 echo "Moving files to public folder..."
-files=("styles.css" "About.html" "Credits.html" 
-        "Dev-Classes.html" "LICENSE" "Mods.html" 
-        "Q&A.html" "README.md" "Updates.html" 
-        "V1-Devs.html" "Versions.html" "index.html" 
-        "Configs" "JS" "Mods" "Templates" "TorrentScripts" "Report.html" "Request.html" "Scripts" "Donate.html")
-
+files=$(ls)
 for file in "${files[@]}"
 do
     mv $file public
