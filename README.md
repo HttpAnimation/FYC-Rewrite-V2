@@ -34,6 +34,7 @@ wget "https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever
 ```
 
 ### Curl
+The 
 
 #### Git
 ```bash
