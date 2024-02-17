@@ -2,6 +2,17 @@
     {
         "Repo-Name": "Offical versions",
         "Movies": {
+            "Sat-17-feb-14.00-2024": {
+                "Name": "Sat-17-feb-14.00-2024",
+                ".Torrent": "https://github.com/HttpAnimation/FYC-Rewrite-V2/archive/refs/tags/Sat-17-feb-14.00-2024.tar.gz",
+                "MagnetUrl": "https://github.com/HttpAnimation/FYC-Rewrite-V2/archive/refs/tags/Sat-17-feb-14.00-2024.zip",
+                "Description": "Local versions form github",
+                "Icon": "https://github.com/HttpAnimation/FYC-Rewrite-V2/blob/main/PFP_1704426442876.png?raw=true",
+                "Source": "https://github.com/HttpAnimation/FYC-Rewrite-V2",
+                "SeedersAtTime": "Github",
+                "HasStreamURL": false,
+                "StreamURL": "URL"
+            },
             "Wed-14-feb-11.13-2024": {
                 "Name": "Wed-14-feb-11.13-2024",
                 ".Torrent": "https://github.com/HttpAnimation/FYC-Rewrite-V2/archive/refs/tags/Wed-14-feb-11.13-2024.tar.gz",
