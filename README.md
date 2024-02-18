@@ -8,7 +8,7 @@ GitHub is showing the readme from main/README.md if you are seeing this while on
 ## Installing
 To install FYC open a terminal and type the following command listed below note that [Windows](https://www.microsoft.com/en-us/windows?r=1) is not tested.
 ```bash
-wget https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/main/Install.sh && chmod +x install.sh && bash install.sh
+wget https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/main/Install.sh && chmod +x Istall.sh && bash Install.sh
 ```
 
 ## Running
