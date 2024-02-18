@@ -16,7 +16,7 @@ wget https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/main/install
 To run FYC open the terminal and cd into the dir where FYC is installed by default it will be installed in the home dir.
 1) cd
    ```bash
-   /home/$user/FYC-Rewrite-V2
+   /home/$user/FYC
    ```
 2) Run the bash script
    ```bash
