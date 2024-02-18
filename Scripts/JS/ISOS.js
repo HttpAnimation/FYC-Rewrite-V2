@@ -29,7 +29,7 @@ function handleSourceButtonClick(sourceUrl) {
     window.open(sourceUrl, '_blank');
 }
 
-fetch('../Configs/Replers/EBook-Repo.json')
+fetch('../Configs/Replers/ISOS.json')
     .then(response => response.json())
     .then(data => {
         const repositories = data[0]['Repositories'];
