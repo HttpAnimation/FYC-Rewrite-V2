@@ -2,6 +2,8 @@
 git clone -b Stable https://github.com/httpanimation/FYC-Rewrite-V2.git
 mv FYC-Rewrite-V2 FYC
 cd FYC
+
+## Removes files only used for github
 rm README.md
 rm -r Templates
 rm Configs/Replers/README.md
