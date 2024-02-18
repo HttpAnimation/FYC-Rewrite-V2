@@ -7,3 +7,4 @@ rm Configs/Replers/README.md
 rm Mods/README.md
 
 # Nodejs
+wget https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever/Run.sh
