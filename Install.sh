@@ -19,3 +19,4 @@ do
     mv $file public
     echo "Done moving $file to public"
 done
+chmod +x Run.sh
