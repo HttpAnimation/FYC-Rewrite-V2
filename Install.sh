@@ -6,12 +6,6 @@ rm README.md
 rm -r Templates
 rm Configs/Replers/README.md
 rm Mods/README.md
-files=$(ls)
-for file in "${files[@]}"
-do
-    mv $file public
-    echo "Done moving $file to public"
-done
 
 # Nodejs
 wget https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever/Run.sh
