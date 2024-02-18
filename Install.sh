@@ -13,3 +13,9 @@ wget https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever/
 wget https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever/package.json
 wget https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever/index.js
 mkdir public
+files=$(ls)
+for file in "${files[@]}"
+do
+    mv $file public
+    echo "Done moving $file to public"
+done
