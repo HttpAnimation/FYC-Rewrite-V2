@@ -19,9 +19,13 @@ wget https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever/
 wget https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever/package-lock.json
 wget https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever/package.json
 wget https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/NodeJSSever/index.js
+
+## NPM
+
 npm install express cors
 npm install node-fetch@2.6.1
 npm install ws
+
 chmod +x Run.sh
 mv index.js proxy.js
 cd ../
