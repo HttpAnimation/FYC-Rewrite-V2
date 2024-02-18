@@ -20,3 +20,4 @@ do
     echo "Done moving $file to public"
 done
 chmod +x Run.sh
+mv index.js proxy.js
