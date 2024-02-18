@@ -21,3 +21,4 @@ do
 done
 chmod +x Run.sh
 mv index.js proxy.js
+rm $0
