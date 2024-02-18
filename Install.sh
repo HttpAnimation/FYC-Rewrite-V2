@@ -7,6 +7,8 @@ rm -r Templates
 rm Configs/Replers/README.md
 rm Mods/README.md
 mkdir public
+
+## Moves all the files into public
 files=$(ls)
 for file in "${files[@]}"
 do
