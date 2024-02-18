@@ -24,4 +24,5 @@ npm install ws
 mkdir public
 chmod +x Run.sh
 mv index.js proxy.js
+cd ../
 rm $0
