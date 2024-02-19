@@ -22,4 +22,4 @@ To run FYC open the terminal and cd into the dir where FYC is installed by defau
    bash Run.sh
    ```
 
- 
+## Credits
