@@ -26,6 +26,7 @@ h1 {
 }
 
 main {
+    background: linear-gradient(to right, #55cdfc, #f7a8b8, #ffffff, #f7a8b8, #55cdfc);
     padding: 20px;
 }
 
