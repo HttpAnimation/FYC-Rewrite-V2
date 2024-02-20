@@ -57,7 +57,6 @@ a {
     height: 100%;
 }
 
-/* Styling scrollbar for sidebar */
 #sidebar::-webkit-scrollbar {
     width: 8px;
 }
