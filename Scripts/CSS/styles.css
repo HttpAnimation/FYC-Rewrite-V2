@@ -75,7 +75,7 @@ a {
 }
 
 #content::-webkit-scrollbar-thumb {
-    background-color: #4d4d4d; /* Dark scrollbar color */
+    background-color: #4d4d4d;
     border-radius: 10px;
 }
 
