@@ -1,68 +1,88 @@
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212; /* Dark background */
+    background-color: #1e1e1e; /* Dark background color */
     color: #ffffff; /* Text color */
 }
 
 #sidebar {
     width: 250px;
-    position: fixed;
     height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #2d2d2d; /* Dark sidebar background color */
+    padding: 20px;
+    box-sizing: border-box;
     overflow-y: auto;
-    background-color: #1e1e1e; /* Sidebar background */
-    padding-top: 20px;
 }
 
 #sidebar h3 {
-    color: #ffffff; /* Sidebar heading color */
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-#sidebar .movie-button {
-    display: block;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    color: #ffffff; /* Button text color */
-    margin-bottom: 5px;
-    transition: background-color 0.3s ease;
-}
-
-#sidebar .movie-button:hover {
-    background-color: #2e2e2e; /* Button hover background */
+    color: #ffffff;
 }
 
 #content {
-    margin-left: 250px; /* Same as sidebar width */
+    margin-left: 250px;
     padding: 20px;
 }
 
-@media (max-width: 768px) {
-    #sidebar {
-        width: 100%;
-        height: auto;
-        position: static;
-    }
-    #content {
-        margin-left: 0;
-    }
-}
-
-/* Centering headings */
-h3 {
-    text-align: center;
-}
-
-/* Link styling */
-a {
+.movie-button {
+    display: block;
     color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #3d3d3d; /* Dark button background color */
+    transition: background-color 0.3s;
+}
+
+.movie-button:hover {
+    background-color: #4d4d4d; /* Dark button background color on hover */
+}
+
+a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+/* Centering text in sidebar */
+#sidebar center {
+    margin-bottom: 20px;
+}
+
+/* Centering text in content */
+#content center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Styling scrollbar for sidebar */
+#sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+    background-color: #4d4d4d; /* Dark scrollbar color */
+    border-radius: 10px;
+}
+
+#sidebar::-webkit-scrollbar-track {
+    background-color: #2d2d2d; /* Dark scrollbar track color */
+}
+
+/* Styling scrollbar for content */
+#content::-webkit-scrollbar {
+    width: 8px;
+}
+
+#content::-webkit-scrollbar-thumb {
+    background-color: #4d4d4d; /* Dark scrollbar color */
+    border-radius: 10px;
+}
+
+#content::-webkit-scrollbar-track {
+    background-color: #1e1e1e; /* Dark scrollbar track color */
 }
