@@ -20,7 +20,7 @@ fetch('https://api.github.com/repos/HttpAnimation/FYC-Rewrite-V2/branches')
                 const commitMessage = commit.commit.message;
                 const commitTimestamp = new Date(commit.commit.committer.date);
                 const formattedTimestamp = commitTimestamp.toLocaleString();
-                return `<div><strong>Branch:</strong> ${branchName}<br><strong>Commit Message:</strong> ${commitMessage}<br><strong>Timestamp:</strong> ${formattedTimestamp}</div>`;
+                return `<div><strong>Branch:</strong> ${branchName}<br><strong>Commit Message:</strong> ${commitMessage}<br><strong>Timestamp:</strong> ${formattedTimestamp}</div><br>`;
             }).join('');
 
             document.getElementById('commits').innerHTML = commitsHTML;
