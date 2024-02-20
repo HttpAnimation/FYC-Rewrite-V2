@@ -50,7 +50,6 @@ a {
     margin-bottom: 20px;
 }
 
-/* Centering text in content */
 #content center {
     display: flex;
     justify-content: center;
