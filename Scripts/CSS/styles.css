@@ -12,7 +12,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #2d2d2d; /* Dark sidebar background color */
+    background-color: #2d2d2d; 
     padding: 20px;
     box-sizing: border-box;
     overflow-y: auto;
