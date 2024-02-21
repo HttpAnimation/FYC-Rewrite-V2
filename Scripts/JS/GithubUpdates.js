@@ -5,7 +5,6 @@
                 // Create an array to store all commits
                 const allCommits = [];
 
-                // Fetch commits for each branch
                 const fetchCommitsPromises = branches.map(branch => {
                     return fetch(`https://api.github.com/repos/HttpAnimation/FYC-Rewrite-V2/commits?sha=${branch.name}`)
                         .then(res => res.json())
