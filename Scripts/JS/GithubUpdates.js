@@ -29,7 +29,6 @@
                             return `<div><strong>Branch:</strong> ${branchName}<br><strong>Message:</strong> ${commitMessage}<br><strong>Time:</strong> ${formattedTimestamp}</div><br>`;
                         }).join('');
 
-                        // Set the HTML content in the designated element
                         document.getElementById('commits').innerHTML = commitsHTML;
                     })
                     .catch(error => {
