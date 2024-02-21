@@ -15,7 +15,6 @@
                         });
                 });
 
-                // When all promises are resolved, sort the commits by timestamp
                 Promise.all(fetchCommitsPromises)
                     .then(() => {
                         allCommits.sort((a, b) => new Date(b.commit.committer.date) - new Date(a.commit.committer.date));
