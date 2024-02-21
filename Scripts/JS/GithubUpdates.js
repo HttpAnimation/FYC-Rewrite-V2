@@ -2,7 +2,6 @@
         fetch('https://api.github.com/repos/HttpAnimation/FYC-Rewrite-V2/branches')
             .then(res => res.json())
             .then(branches => {
-                // Create an array to store all commits
                 const allCommits = [];
 
                 const fetchCommitsPromises = branches.map(branch => {
