@@ -1,4 +1,4 @@
 cd ../
 cd public
 cd Configs
-mv Replers 
+mv Replers ../../../Replers
