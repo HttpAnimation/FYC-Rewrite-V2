@@ -35,6 +35,7 @@ mv index.js proxy.js
 
 ## Make update
 mkdir Update
+cd Update
 wget https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/main/Update.sh
 
 
