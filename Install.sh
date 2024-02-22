@@ -16,7 +16,7 @@ for file in "${files[@]}"
 do
     mv $file public
     echo "Done moving $file to public"
-    echo "The error mv: cannot move 'public' to a subdirectory of itself, 'public/public'"
+    echo "The error mv: cannot move 'public' to a subdirectory of itself, 'public/public' is supposed"
 done
 
 # Nodejs
