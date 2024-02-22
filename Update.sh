@@ -1,2 +1,3 @@
 cd public
 cd Configs
+mv Replers 
