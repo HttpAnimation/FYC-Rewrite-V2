@@ -43,4 +43,5 @@ wget https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/main/Startin
 mv StartingUpdate.sh Update.bash
 chmod +x Update.bash
 
+## Remove .git
 rm $0
