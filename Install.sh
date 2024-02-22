@@ -39,7 +39,7 @@ cd Update
 wget https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/main/Update.sh
 chmod +x Update.sh
 cd ../
-
+wget
 
 cd ../
 rm $0
