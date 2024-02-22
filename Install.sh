@@ -45,4 +45,5 @@ chmod +x Update.bash
 
 ## Remove .git
 rm -rf .git
+
 rm $0
