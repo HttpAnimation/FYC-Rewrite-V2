@@ -40,7 +40,7 @@ wget https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/main/Update.
 chmod +x Update.sh
 cd ../
 wget https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/main/StartingUpdate.sh
-
+mv StartingUpdate.sh Update.bash
 
 cd ../
 rm $0
