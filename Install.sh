@@ -41,5 +41,6 @@ chmod +x Update.sh
 cd ../
 wget https://raw.githubusercontent.com/HttpAnimation/FYC-Rewrite-V2/main/StartingUpdate.sh
 
+
 cd ../
 rm $0
