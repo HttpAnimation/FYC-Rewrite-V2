@@ -34,7 +34,7 @@ chmod +x Run.sh
 mv index.js proxy.js
 
 ## Make update
-
+mkdir Update
 
 cd ../
 rm $0
