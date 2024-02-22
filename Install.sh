@@ -35,6 +35,7 @@ mv index.js proxy.js
 
 ## Make update
 mkdir Update
+wget 
 
 cd ../
 rm $0
