@@ -29,8 +29,6 @@ const server = app.listen(port, host, () => {
   const ip = serverAddress.address === '0.0.0.0' ? getLocalIP() : serverAddress.address;
   console.log(`1/ip | Server listening at http://${ip}:${port}`);
   console.log(`2/local | Server is also accessible via http://localhost:${port}`);
-  console.log(`1/ip | This is the url for all other pcs on the network to use and connect to use.`);
-  console.log(`2/local | This is the url that only that your pc that can go to and is mainly used for a API and faster connection speeds.`);
 });
 
 const wss = new WebSocket.Server({ noServer: true });
