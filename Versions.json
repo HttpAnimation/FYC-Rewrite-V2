@@ -7,6 +7,7 @@
                 ".Torrent": "https://github.com/HttpAnimation/FYC-Rewrite-V2/archive/refs/tags/Fri-08-mar-14.49-2024.tar.gz",
                 "MagnetUrl": "https://github.com/HttpAnimation/FYC-Rewrite-V2/archive/refs/tags/Fri-08-mar-14.49-2024.zip",
                 "Description": "Local versions form github",
+                "Icon": "",
                 "Source": "https://github.com/HttpAnimation/FYC-Rewrite-V2",
                 "SeedersAtTime": "Github",
                 "HasStreamURL": false,
