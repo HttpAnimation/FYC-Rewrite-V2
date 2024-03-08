@@ -10,9 +10,9 @@ for mod_folder in Mods/*; do
         if [ -e "$mod_folder/index.html" ]; then
             # Get the mod name from the folder name
             mod_name=$(basename "$mod_folder")
-            sed -i "${insert_position}a \ \ \ \ <a href=\"${mod_folder}/index.html\" class=\"movie-button\">${mod_name}</a>" $mods_html
+            sed -i "${insert_position}a \ \ \ \ <a href=\"${mod_folder}/index.html\" class=\"movie-button\">${mod_name}</a></b>" $mods_html
         else
-            sed -i "/<a href=\"Mods\/${mod_name}\/index.html\"/d" $mods_html
+            sed -i "/<b><a href=\"Mods\/${mod_name}\/index.html\"/d" $mods_html
         fi
     fi
 done
