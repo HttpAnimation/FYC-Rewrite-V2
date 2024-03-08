@@ -39,6 +39,7 @@ fetch('Configs/Replers/Versions.json')
                             <h1>${movie['Name']}</h1>
                             <a href="${movie['.Torrent']}" target="_blank" class="movie-button">Download Tar.gz / Linux | macOS</a>
                             <a href="${movie['MagnetUrl']}" target="_blank" class="movie-button">Download Zip / Windows</a>
+                            <br>
                         `;
                         if (movie['HasStreamURL'] === true) {
                             const streamButton = document.createElement('a');
