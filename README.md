@@ -15,3 +15,4 @@ If you would like to build run the following commands.
 git clone -b CApp https://github.com/HttpAnimation/FYC-Rewrite-V2.git
 ```
 
+2) Enter the dir.
