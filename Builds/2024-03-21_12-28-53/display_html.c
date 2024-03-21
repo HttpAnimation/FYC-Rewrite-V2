@@ -5,10 +5,6 @@ static void destroy_window(GtkWidget *widget, gpointer data) {
     gtk_main_quit();
 }
 
-static void load_failed_cb(WebKitWebView *web_view, gchar *uri, GError *error, gpointer user_data) {
-    g_printerr("Failed to load %s: %s\n", uri, error->message);
-}
-
 int main(int argc, char *argv[]) {
     gtk_init(&argc, &argv);
 
@@ -18,9 +14,6 @@ int main(int argc, char *argv[]) {
 
     WebKitWebView *webView = WEBKIT_WEB_VIEW(webkit_web_view_new());
     gtk_container_add(GTK_CONTAINER(window), GTK_WIDGET(webView));
-
-    // Connect signal for load failure
-    g_signal_connect(webView, "load-failed", G_CALLBACK(load_failed_cb), NULL);
 
     // Load HTML content directly
     const gchar *html_content = "<html><body><h1>Hello, World!</h1></body></html>";
