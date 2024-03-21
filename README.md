@@ -16,3 +16,6 @@ git clone -b CApp https://github.com/HttpAnimation/FYC-Rewrite-V2.git
 ```
 
 2) Enter the dir.
+```bash
+cd FYC-Rewrite-V2
+```
