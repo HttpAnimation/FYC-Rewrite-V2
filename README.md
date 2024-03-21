@@ -6,3 +6,11 @@ This will be the main app for FYC as FYC will ditch html and css and insted use 
 
 ## Installing
 Right now you can't
+
+## Building
+If you would like to build run the following commands.
+
+1) Download 
+```bash
+git clone -b CApp https://github.com/HttpAnimation/FYC-Rewrite-V2.git
+```
