@@ -15,9 +15,9 @@ int main(int argc, char *argv[]) {
     WebKitWebView *webView = WEBKIT_WEB_VIEW(webkit_web_view_new());
     gtk_container_add(GTK_CONTAINER(window), GTK_WIDGET(webView));
 
-    gchar *file_path = g_build_filename(g_get_current_dir(), "index.html", NULL);
-    webkit_web_view_load_uri(webView, g_filename_to_uri(file_path, NULL, NULL));
-    g_free(file_path);
+    // Load HTML content directly
+    const gchar *html_content = "<html><body><h1>Hello, World!</h1></body></html>";
+    webkit_web_view_load_html(webView, html_content, NULL);
 
     gtk_widget_show_all(window);
     gtk_main();
