@@ -1,4 +1,4 @@
-# FYC Rewrite V2
+# FYC Rewrite V2/CApp/README.md
 The **c** app coded for FYC
 
 ## About
