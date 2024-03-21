@@ -29,3 +29,5 @@ git clone -b gitter https://github.com/HttpAnimation/FYC-Rewrite-V2.git
 mv FYC-Rewrite-V2 gitter
 git clone -b main https://github.com/HttpAnimation/FYC-Rewrite-V2.git
 mv FYC-Rewrite-V2 main
+git clone -b CApp https://github.com/HttpAnimation/FYC-Rewrite-V2.git
+mv FYC-Rewrite-V2 CApp
