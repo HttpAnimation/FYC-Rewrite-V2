@@ -19,3 +19,8 @@ git clone -b CApp https://github.com/HttpAnimation/FYC-Rewrite-V2.git
 ```bash
 cd FYC-Rewrite-V2
 ```
+
+3) Build
+```bash
+./compile
+```
