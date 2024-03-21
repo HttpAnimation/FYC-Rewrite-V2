@@ -11,7 +11,7 @@ build_folder="Builds/$current_datetime"
 mkdir -p "$build_folder"
 
 # Compile c scripts into the build folder
-# Put scripts here once done
+gcc `pkg-config --cflags gtk+-3.0 webkit2gtk-4.0` -o "$build_folder/display_html" display_html.c `pkg-config --libs gtk+-3.0 webkit2gtk-4.0`
 
 # Copy files into the build folder
 cp * "$build_folder"
