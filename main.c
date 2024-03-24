@@ -27,6 +27,12 @@ int main(int argc, char *argv[]) {
     JsonObject *root;
     JsonArray *buttons;
     guint num_buttons, i;
+    gboolean fullscreen = FALSE;
+
+    // Check if the script is run with -f flag
+    if (argc > 1 && strcmp(argv[1], "-f") == 0) {
+        fullscreen = TRUE;
+    }
 
     gtk_init(&argc, &argv);
 
@@ -63,7 +69,11 @@ int main(int argc, char *argv[]) {
     // Create GTK window
     window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
     gtk_window_set_title(GTK_WINDOW(window), "FYC");
-    gtk_window_set_default_size(GTK_WINDOW(window), 600, 400); // Set initial window size
+    if (fullscreen) {
+        gtk_window_fullscreen(GTK_WINDOW(window)); // Set window to fullscreen mode if -f flag is provided
+    } else {
+        gtk_window_set_default_size(GTK_WINDOW(window), 600, 400); // Set initial window size
+    }
     g_signal_connect(window, "destroy", G_CALLBACK(gtk_main_quit), NULL);
 
     // Create a grid layout
