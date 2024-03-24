@@ -11,6 +11,7 @@ build_folder="Builds/$current_datetime"
 mkdir -p "$build_folder"
 
 # Compile c scripts into the build folder
+gcc -o main main.c $(pkg-config --cflags --libs gtk+-3.0 json-glib-1.0)
 
 # Copy files into the build folder
 cp * "$build_folder"
