@@ -29,5 +29,4 @@ echo "This is an auto-generated message and might work or might not." >> "$readm
 # Print the path to the build folder
 echo "Builds created at: $build_folder"
 echo "You can also run it by typing this in:"
-echo "./$build_folder/display_html"
 echo "./$build_folder/FYC"
