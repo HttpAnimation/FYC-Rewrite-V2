@@ -16,6 +16,8 @@ void on_button_clicked(GtkWidget *widget, gpointer data) {
 int main(int argc, char *argv[]) {
     GtkWidget *window;
     GtkWidget *grid;
+    GtkWidget *sidebar;
+    GtkWidget *title;
     GtkWidget *button;
     gchar *filename = "mainbuttons.json";
     gchar *file_contents;
@@ -61,12 +63,21 @@ int main(int argc, char *argv[]) {
     // Create GTK window
     window = gtk_window_new(GTK_WINDOW_TOPLEVEL);
     gtk_window_set_title(GTK_WINDOW(window), "Main Buttons");
-    gtk_window_set_default_size(GTK_WINDOW(window), 400, 300); // Set initial window size
+    gtk_window_set_default_size(GTK_WINDOW(window), 600, 400); // Set initial window size
     g_signal_connect(window, "destroy", G_CALLBACK(gtk_main_quit), NULL);
 
     // Create a grid layout
     grid = gtk_grid_new();
     gtk_container_add(GTK_CONTAINER(window), grid);
+
+    // Create a sidebar for buttons
+    sidebar = gtk_grid_new();
+    gtk_grid_attach(GTK_GRID(grid), sidebar, 0, 1, 1, 1);
+
+    // Create a title label
+    title = gtk_label_new("FYC");
+    gtk_grid_attach(GTK_GRID(grid), title, 0, 0, 1, 1);
+    gtk_widget_set_halign(title, GTK_ALIGN_CENTER);
 
     // Create buttons based on JSON data
     for (i = 0; i < num_buttons; ++i) {
@@ -77,8 +88,8 @@ int main(int argc, char *argv[]) {
         button = gtk_button_new_with_label(button_label);
         g_signal_connect(button, "clicked", G_CALLBACK(on_button_clicked), NULL);
         
-        // Add button to grid
-        gtk_grid_attach(GTK_GRID(grid), button, 0, i, 1, 1);
+        // Add button to sidebar
+        gtk_grid_attach(GTK_GRID(sidebar), button, 0, i, 1, 1);
     }
 
     gtk_widget_show_all(window);
